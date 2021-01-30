@@ -2,8 +2,15 @@
 
 namespace ArcherLai_PE1
 {
-    class Program
-    {
+    // Class: Main
+    // Author: ArcherLai
+    // Purpose: Be familiar with C#, create some variables and try out loops and statements.
+    // Restrictions: None
+    static class Program
+        {       
+                // Method: while loop, for loop, if statements
+                // Purpose: Print some calculation results, try out loops method and if statements
+                //Restrictions: None
         static void Main(string[] args)
         {
             //To say Hi I am Archer
