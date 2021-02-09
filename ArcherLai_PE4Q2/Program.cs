@@ -16,32 +16,33 @@ namespace ArcherLai_PE4Q2
         // Purpose: Q2
         //Restrictions: None
         static void Main(string[] args)
-        {
-            int var1 = 0;
-            int var2 = 0;
-            bool operant1 = false;
-            bool operant2 = false;
-            if (var1 < 10 && var2 < 10)
-            {
-                operant1 = false;
-                operant2 = false;
-            }
-            else if (var1 > 10 && var2 < 10)
-            {
-                operant1 = true;
-                operant2 = false;
-            }
-            else if (var1 < 10 && var2 > 10)
-            {
-                operant1 = false;
-                operant2 = true;
-            }
-            else
-            {
-                operant1 = true;
-                operant2 = true;
-            }
+        { 
+            Console.WriteLine("Input two numbers: ");
+            int var1 = Console.Read();
+            int var2 = Console.Read();
 
+           
+            bool operant = false;
+            if (var1 > 10 && var2 > 10)
+            {
+                Console.WriteLine("Your input is: " + var1 + "," + var2);
+                Console.WriteLine("Your input is worng", operant);
+                Console.WriteLine("Input numbers again: ");
+                Console.ReadLine();
+                int var3 = Console.Read();
+                int var4 = Console.Read();
+                if(var3 < 10 && var4 < 10)
+                {
+                    Console.WriteLine("The numbers are: " + var3 + var4);
+                }
+            }else
+            {
+                Console.WriteLine("Your input is correct!", !operant);
+                Console.WriteLine("Your input is: " + var1 + var2);
+            }
+            
+         
+           
 
 
 
