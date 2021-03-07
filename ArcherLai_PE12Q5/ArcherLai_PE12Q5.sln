@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcherLai_PE12Q5", "ArcherLai_PE12Q5.csproj", "{B028AA8B-AB82-454F-9406-03739C7D2B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B028AA8B-AB82-454F-9406-03739C7D2B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B028AA8B-AB82-454F-9406-03739C7D2B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B028AA8B-AB82-454F-9406-03739C7D2B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B028AA8B-AB82-454F-9406-03739C7D2B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A08F350-9F08-477C-9BDB-1030737ABAA5}
+	EndGlobalSection
+EndGlobal
