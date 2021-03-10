@@ -14,11 +14,11 @@ namespace ArcherLai_PE13
             get
             {
                 Pet returnVal;
-                
+
                 try
                 {
                     returnVal = (Pet)petList[nPetEl];
-                    
+
                 }
                 catch
                 {
@@ -44,7 +44,7 @@ namespace ArcherLai_PE13
             }
 
         }
-        
+
         public int Count
         {
             get
@@ -57,7 +57,7 @@ namespace ArcherLai_PE13
         {
             petList.Add(pet);
         }
-            
+
         public void Remove(Pet pet)
         {
             petList.Remove(pet);
@@ -68,75 +68,73 @@ namespace ArcherLai_PE13
             petList.RemoveAt(petEl);
         }
     }
+
     public abstract class Pet
     {
-       
+
         private string name;
         public int age;
 
         public string Name
         {
-            get
-            {
-                return this.name;
-            }
+            get { return this.name; }
 
-            set
-            {
-                this.name = value;
-            }
+            set { this.name = value; }
         }
-        public abstract void Eat();
 
-        public abstract void Play();
+        public Pet()
+        {
 
-        public abstract void GotoVet();
+        }
 
         public Pet(string name, int age)
         {
             this.name = name;
             this.age = age;
         }
-        public Pet()
-        {
 
-        }
+        public abstract void Eat();
+
+        public abstract void Play();
+
+        public abstract void GotoVet();
     }
 
 
     public class Cat : Pet, ICat
     {
-        public Cat()
+        public Cat(string name, int age) : base(name, age)
         {
-           
+
         }
+
         public void intro()
         {
-            Console.WriteLine("You bought a cat!");
+            Console.WriteLine(Name + ": You bought a cat!");
         }
         public override void Eat()
         {
-            Console.WriteLine("Where's that mouse...");
+            Console.WriteLine(Name + ": Where's that mouse...");
         }
 
         public override void Play()
         {
-            Console.WriteLine("Yuck, I don't like that!");
+            Console.WriteLine(Name + ": Yuck, I don't like that!");
         }
 
         public void Purr()
         {
-            Console.WriteLine("purrrrrrrrrrrrrrrrrrrr..");
+            Console.WriteLine(Name + ": purrrrrrrrrrrrrrrrrrrr..");
         }
 
         public void Scratch()
         {
-            Console.WriteLine("Hiss!");
+            Console.WriteLine(Name + ": Hiss!");
         }
 
         public override void GotoVet()
         {
-            Console.WriteLine("Peeeeeeeeeeeeee----");
+            Console.WriteLine(Name + ": Peeeeeeeeeeeeee----");
         }
 
     }
@@ -147,37 +145,43 @@ namespace ArcherLai_PE13
         void Scratch();
         void Purr();
     }
-    
+
     public class Dog : Pet, IDog
     {
         public string license;
-        public void intro()
+
+        public Dog(string license, string name, int age) : base(name, age)
+        {
+
+        }
+
+        public void Intro()
         {
             Console.WriteLine("You bought a dog!");
         }
         public override void Eat()
         {
-            Console.WriteLine("Yummy, I will eat anything!");
+            Console.WriteLine(Name + ": Yummy, I will eat anything!");
         }
 
         public override void Play()
         {
-            Console.WriteLine("Throw the ball, throw the ball!");
+            Console.WriteLine(Name + ": Throw the ball, throw the ball!");
         }
 
         public void Bark()
         {
-            Console.WriteLine("Woof woof!");
+            Console.WriteLine(Name + ": Woof woof!");
         }
 
         public void NeedWalk()
         {
-            Console.WriteLine("Woof woof, I need to go out.");
+            Console.WriteLine(Name + ": Woof woof, I need to go out.");
         }
 
         public override void GotoVet()
         {
-            Console.WriteLine("Whimper, whimper, no vet!");
+            Console.WriteLine(Name + ": Whimper, whimper, no vet!");
         }
     }
 
@@ -193,51 +197,94 @@ namespace ArcherLai_PE13
     class Program
     {
         static void Main(string[] args)
-        {          
+        {
             Pet thisPet = null;
             Dog dog = null;
             Cat cat = null;
             IDog iDog = null;
             ICat iCat = null;
+
             Pets pets = new Pets();
             Random rand = new Random();
-            List<Pet> petList = new List<Pet>();
+
             // 1 in 10 chance of adding an animal
-            for (int i = 0; i < 50; ++i) 
+            for (int i = 0; i < 50; ++i)
             {
+                thisPet = null;
                 if (rand.Next(1, 11) == 1)
                 {
                     if (rand.Next(0, 2) == 0)
                     {
-                        pets.Add(new Dog());
+                        pets.Add(new Dog("A license for this dog!", "Stupid", 3));
                         // add a dog
 
                     }
                     else
                     {
-                        pets.Add(new Cat());
+                        pets.Add(new Cat("AbaAba", 1));
                         // else add a cat
                     }
                 }
                 else
                 {
                     thisPet = pets[rand.Next(0, pets.Count)];
-                    
+
                     if (thisPet == null)
                     {
                         continue;
                     }
                     else
                     {
-                        if (thisPet.GetType() == dog.GetType())
+                        if (thisPet.GetType() == typeof(Cat))
                         {
-                            iDog = thisPet.GetType();
+                            iCat = (Cat)thisPet;
+                            switch (rand.Next(1, 5))
+                            {
+                                case 1:
+
+                                    iCat.Play();
+                                    break;
+                                case 2:
+                                    iCat.Eat();
+                                    break;
+                                case 3:
+                                    iCat.Purr();
+                                    break;
+                                case 4:
+                                    iCat.Scratch();
+                                    break;
+                            }
                         }
-                        
+                        else
+                        {
+                            iDog = (Dog)thisPet;
+                            switch (rand.Next(1, 6))
+                            {
+                                case 1:
+                                    iDog.Play();
+                                    break;
+                                case 2:
+                                    iDog.Eat();
+                                    break;
+                                case 3:
+                                    iDog.GotoVet();
+                                    break;
+                                case 4:
+                                    iDog.Bark();
+                                    break;
+                                case 5:
+                                    iDog.NeedWalk();
+                                    break;
+                            }
+                        }
+
                     }
                     // choose a random pet from pets and choose a random activity for the pet to do
+
                 }
             }
+
+            Console.ReadLine();
         }
     }
 }
