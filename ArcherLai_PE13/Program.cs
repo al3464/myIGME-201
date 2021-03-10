@@ -201,7 +201,6 @@ namespace ArcherLai_PE13
             Pets pets = new Pets();
             Random rand = new Random();
             List<Pet> petList = new List<Pet>();
-            petList<string, object> CatDogNameList = new petList<string, object>();
             // 1 in 10 chance of adding an animal
             for (int i = 0; i < 50; ++i) 
             {
