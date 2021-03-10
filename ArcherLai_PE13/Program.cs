@@ -189,13 +189,14 @@ namespace ArcherLai_PE13
         void NeedWalk();
         void GotoVet();
     }
+
     class Program
     {
         static void Main(string[] args)
         {          
             Pet thisPet = null;
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            Dog dog = null;
+            Cat cat = null;
             IDog iDog = null;
             ICat iCat = null;
             Pets pets = new Pets();
@@ -208,25 +209,32 @@ namespace ArcherLai_PE13
                 {
                     if (rand.Next(0, 2) == 0)
                     {
-                        dog.intro();
-                        
-                        Console.WriteLine("The dog's name is:"); 
-                        string dogName = Console.ReadLine();
-                        Console.WriteLine("Age?");
-                        string dogAge = Console.ReadLine();
+                        pets.Add(new Dog());
                         // add a dog
+
                     }
                     else
                     {
-                        cat.intro();
-                        Console.WriteLine("The cat's name is:");
-                        string catName = Console.ReadLine();
+                        pets.Add(new Cat());
                         // else add a cat
                     }
                 }
                 else
                 {
+                    thisPet = pets[rand.Next(0, pets.Count)];
                     
+                    if (thisPet == null)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (thisPet.GetType() == dog.GetType())
+                        {
+                            iDog = thisPet.GetType();
+                        }
+                        
+                    }
                     // choose a random pet from pets and choose a random activity for the pet to do
                 }
             }
