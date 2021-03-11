@@ -227,6 +227,7 @@ namespace ArcherLai_PE13
                 }
                 else
                 {
+                    //use switch method to randomize
                     thisPet = pets[rand.Next(0, pets.Count)];
 
                     if (thisPet == null)
