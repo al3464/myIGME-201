@@ -27,10 +27,42 @@ namespace ArcherLai_PE16
             }
 
         }
-
-        public class Customer
+        interface IMood
         {
-
+            void Mood(string r);
         }
+        public class Customer : IMood
+        {
+            public string name;
+            public string creditCardNumber;
+
+            public Customer()
+            {
+
+            }
+
+            public void Mood(string r)
+            {
+          
+            }
+        }
+
+        public class Waiter : IMood
+        {
+            string name;
+            public void Mood(string r)
+            {
+
+            }
+
+            public void ServeCustomer(HotDrink cup)
+            {
+
+            }
+        }
+
+        
+
+        
     }
 }
