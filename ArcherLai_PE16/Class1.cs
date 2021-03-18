@@ -26,6 +26,8 @@ namespace ArcherLai_PE16
 
             }
 
+            public abstract void Steam();
+
         }
         interface IMood
         {
@@ -61,7 +63,70 @@ namespace ArcherLai_PE16
             }
         }
 
-        
+        interface ITakeOrder
+        {
+            void TakeOrder();
+        }
+
+        public class CupOfCoffee : ITakeOrder
+        {
+            public string beanType;
+            public override void Steam() 
+            {
+                
+            }
+
+            public void TakeOrder()
+            {
+                
+            }
+
+
+        }
+
+        public class CupOfTea : ITakeOrder
+        {
+            public string leafType;
+            public override void Steam()
+            {
+
+            }
+
+            public void TakeOrder()
+            {
+
+            }
+
+            public bool customerlsWealthy;
+        }
+
+        public class CupOfCocoa : ITakeOrder
+        {
+           public int numCups;
+            public bool marshmallows;
+            private string source;
+            public string Source;
+            public override void Steam()
+            {
+
+            }
+
+            public override void AddSugar(byte amount)
+            {
+
+            }
+
+            public void TakeOrder()
+            {
+
+            }
+
+            public bool marshmellows() : base("Expensice Organic Brand")
+            {
+
+            }
+
+        }
 
         
     }
