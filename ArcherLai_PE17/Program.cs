@@ -308,10 +308,9 @@ namespace GameOfLife
                                 {
                                     if (col < MAX_COLS - 1)
                                     {
-                                        neighborCell = organism[row, col + 1];
+                                        neighborCell = organism[row - 1, col + 1];
                                         
                                     }
-                                    neighborCell = organism[row - 1, col];
                                 }
                                 break;
                             case (int)EDirection.bottomleft:
@@ -327,10 +326,9 @@ namespace GameOfLife
                                 {
                                     if (col < MAX_COLS - 1)
                                     {
-                                        neighborCell = organism[row, col + 1];
+                                        neighborCell = organism[row + 1, col + 1];
 
                                     }
-                                    neighborCell = organism[row + 1, col];
                                 }
                                 break;
                         }
@@ -360,7 +358,7 @@ namespace GameOfLife
                 CalculateNextGeneration(organism[0, 0]);
 
                 // sleep for 100 milliseconds
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(300);
             }
         }
 
