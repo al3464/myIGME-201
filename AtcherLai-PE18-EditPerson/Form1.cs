@@ -249,7 +249,7 @@ namespace EditPerson
                 // set specText and specialtyLabel Visible field = false
                 this.specialtyLabel.Visible = false;
                 this.specText.Visible = false;
-
+                this.classGroupBox.Visible = true;
                 // set the specText field as valid
                 this.specText.Tag = true;
 
@@ -268,7 +268,7 @@ namespace EditPerson
                 this.specText.Visible = true;
 
                 this.specText.Tag = (this.specText.Text.Length > 0);
-
+                this.classGroupBox.Visible = false;
                 // set gpaText and gpaLabel Visible field = false
                 this.gpaLabel.Visible = false;
                 this.gpaText.Visible = false;
@@ -336,6 +336,21 @@ namespace EditPerson
 
             ValidateAll();
         }
+
+        private void ClassRadioButton__CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+
+            if(rb.Checked = true)
+            {
+                this.classOfLabel.Text = "Class of 9999";
+            }
+            else
+            {
+                rb.Checked = false;
+            }
+        }
+
 
         private void TxtBoxEmpty__Validating(object sender, CancelEventArgs e)
         {
@@ -419,11 +434,6 @@ namespace EditPerson
             this.Dispose();
         }
 
-
-        private void ClassRadioButton__CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void CancelButton__Click(object sender, EventArgs e)

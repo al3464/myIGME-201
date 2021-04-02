@@ -47,18 +47,18 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.genderGroupBox = new System.Windows.Forms.GroupBox();
-            this.classGroupBox2 = new System.Windows.Forms.GroupBox();
-            this.classOfLabel = new System.Windows.Forms.Label();
-            this.himRadioButton = new System.Windows.Forms.RadioButton();
-            this.herRadioButton = new System.Windows.Forms.RadioButton();
             this.themRadioButton = new System.Windows.Forms.RadioButton();
-            this.froshRadioButton = new System.Windows.Forms.RadioButton();
-            this.sophRadioButton = new System.Windows.Forms.RadioButton();
-            this.juniorRadioButton = new System.Windows.Forms.RadioButton();
+            this.herRadioButton = new System.Windows.Forms.RadioButton();
+            this.himRadioButton = new System.Windows.Forms.RadioButton();
+            this.classGroupBox = new System.Windows.Forms.GroupBox();
+            this.classOfLabel = new System.Windows.Forms.Label();
             this.seniorRadioButton = new System.Windows.Forms.RadioButton();
+            this.juniorRadioButton = new System.Windows.Forms.RadioButton();
+            this.sophRadioButton = new System.Windows.Forms.RadioButton();
+            this.froshRadioButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.genderGroupBox.SuspendLayout();
-            this.classGroupBox2.SuspendLayout();
+            this.classGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // typeLabel
@@ -234,40 +234,16 @@
             this.genderGroupBox.TabStop = false;
             this.genderGroupBox.Text = "Gender";
             // 
-            // classGroupBox2
+            // themRadioButton
             // 
-            this.classGroupBox2.Controls.Add(this.classOfLabel);
-            this.classGroupBox2.Controls.Add(this.seniorRadioButton);
-            this.classGroupBox2.Controls.Add(this.juniorRadioButton);
-            this.classGroupBox2.Controls.Add(this.sophRadioButton);
-            this.classGroupBox2.Controls.Add(this.froshRadioButton);
-            this.classGroupBox2.Location = new System.Drawing.Point(576, 53);
-            this.classGroupBox2.Name = "classGroupBox2";
-            this.classGroupBox2.Size = new System.Drawing.Size(155, 136);
-            this.classGroupBox2.TabIndex = 7;
-            this.classGroupBox2.TabStop = false;
-            this.classGroupBox2.Text = "Class";
-            // 
-            // classOfLabel
-            // 
-            this.classOfLabel.AutoSize = true;
-            this.classOfLabel.Location = new System.Drawing.Point(36, 116);
-            this.classOfLabel.Name = "classOfLabel";
-            this.classOfLabel.Size = new System.Drawing.Size(71, 13);
-            this.classOfLabel.TabIndex = 10;
-            this.classOfLabel.Text = "Class of 9999";
-            this.classOfLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // himRadioButton
-            // 
-            this.himRadioButton.AutoSize = true;
-            this.himRadioButton.Location = new System.Drawing.Point(6, 19);
-            this.himRadioButton.Name = "himRadioButton";
-            this.himRadioButton.Size = new System.Drawing.Size(43, 17);
-            this.himRadioButton.TabIndex = 0;
-            this.himRadioButton.TabStop = true;
-            this.himRadioButton.Text = "Him";
-            this.himRadioButton.UseVisualStyleBackColor = true;
+            this.themRadioButton.AutoSize = true;
+            this.themRadioButton.Location = new System.Drawing.Point(6, 65);
+            this.themRadioButton.Name = "themRadioButton";
+            this.themRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.themRadioButton.TabIndex = 2;
+            this.themRadioButton.TabStop = true;
+            this.themRadioButton.Text = "Them";
+            this.themRadioButton.UseVisualStyleBackColor = true;
             // 
             // herRadioButton
             // 
@@ -280,49 +256,40 @@
             this.herRadioButton.Text = "Her";
             this.herRadioButton.UseVisualStyleBackColor = true;
             // 
-            // themRadioButton
+            // himRadioButton
             // 
-            this.themRadioButton.AutoSize = true;
-            this.themRadioButton.Location = new System.Drawing.Point(6, 65);
-            this.themRadioButton.Name = "themRadioButton";
-            this.themRadioButton.Size = new System.Drawing.Size(52, 17);
-            this.themRadioButton.TabIndex = 2;
-            this.themRadioButton.TabStop = true;
-            this.themRadioButton.Text = "Them";
-            this.themRadioButton.UseVisualStyleBackColor = true;
+            this.himRadioButton.AutoSize = true;
+            this.himRadioButton.Location = new System.Drawing.Point(6, 19);
+            this.himRadioButton.Name = "himRadioButton";
+            this.himRadioButton.Size = new System.Drawing.Size(43, 17);
+            this.himRadioButton.TabIndex = 0;
+            this.himRadioButton.TabStop = true;
+            this.himRadioButton.Text = "Him";
+            this.himRadioButton.UseVisualStyleBackColor = true;
             // 
-            // froshRadioButton
+            // classGroupBox
             // 
-            this.froshRadioButton.AutoSize = true;
-            this.froshRadioButton.Location = new System.Drawing.Point(6, 19);
-            this.froshRadioButton.Name = "froshRadioButton";
-            this.froshRadioButton.Size = new System.Drawing.Size(71, 17);
-            this.froshRadioButton.TabIndex = 3;
-            this.froshRadioButton.TabStop = true;
-            this.froshRadioButton.Text = "Freshman";
-            this.froshRadioButton.UseVisualStyleBackColor = true;
+            this.classGroupBox.Controls.Add(this.classOfLabel);
+            this.classGroupBox.Controls.Add(this.seniorRadioButton);
+            this.classGroupBox.Controls.Add(this.juniorRadioButton);
+            this.classGroupBox.Controls.Add(this.sophRadioButton);
+            this.classGroupBox.Controls.Add(this.froshRadioButton);
+            this.classGroupBox.Location = new System.Drawing.Point(576, 53);
+            this.classGroupBox.Name = "classGroupBox";
+            this.classGroupBox.Size = new System.Drawing.Size(155, 136);
+            this.classGroupBox.TabIndex = 7;
+            this.classGroupBox.TabStop = false;
+            this.classGroupBox.Text = "Class";
             // 
-            // sophRadioButton
+            // classOfLabel
             // 
-            this.sophRadioButton.AutoSize = true;
-            this.sophRadioButton.Location = new System.Drawing.Point(6, 42);
-            this.sophRadioButton.Name = "sophRadioButton";
-            this.sophRadioButton.Size = new System.Drawing.Size(79, 17);
-            this.sophRadioButton.TabIndex = 4;
-            this.sophRadioButton.TabStop = true;
-            this.sophRadioButton.Text = "Sophomore";
-            this.sophRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // juniorRadioButton
-            // 
-            this.juniorRadioButton.AutoSize = true;
-            this.juniorRadioButton.Location = new System.Drawing.Point(6, 65);
-            this.juniorRadioButton.Name = "juniorRadioButton";
-            this.juniorRadioButton.Size = new System.Drawing.Size(53, 17);
-            this.juniorRadioButton.TabIndex = 5;
-            this.juniorRadioButton.TabStop = true;
-            this.juniorRadioButton.Text = "Junior";
-            this.juniorRadioButton.UseVisualStyleBackColor = true;
+            this.classOfLabel.AutoSize = true;
+            this.classOfLabel.Location = new System.Drawing.Point(36, 116);
+            this.classOfLabel.Name = "classOfLabel";
+            this.classOfLabel.Size = new System.Drawing.Size(71, 13);
+            this.classOfLabel.TabIndex = 10;
+            this.classOfLabel.Text = "Class of 9999";
+            this.classOfLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // seniorRadioButton
             // 
@@ -335,6 +302,39 @@
             this.seniorRadioButton.Text = "Senior";
             this.seniorRadioButton.UseVisualStyleBackColor = true;
             // 
+            // juniorRadioButton
+            // 
+            this.juniorRadioButton.AutoSize = true;
+            this.juniorRadioButton.Location = new System.Drawing.Point(6, 65);
+            this.juniorRadioButton.Name = "juniorRadioButton";
+            this.juniorRadioButton.Size = new System.Drawing.Size(53, 17);
+            this.juniorRadioButton.TabIndex = 5;
+            this.juniorRadioButton.TabStop = true;
+            this.juniorRadioButton.Text = "Junior";
+            this.juniorRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // sophRadioButton
+            // 
+            this.sophRadioButton.AutoSize = true;
+            this.sophRadioButton.Location = new System.Drawing.Point(6, 42);
+            this.sophRadioButton.Name = "sophRadioButton";
+            this.sophRadioButton.Size = new System.Drawing.Size(79, 17);
+            this.sophRadioButton.TabIndex = 4;
+            this.sophRadioButton.TabStop = true;
+            this.sophRadioButton.Text = "Sophomore";
+            this.sophRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // froshRadioButton
+            // 
+            this.froshRadioButton.AutoSize = true;
+            this.froshRadioButton.Location = new System.Drawing.Point(6, 19);
+            this.froshRadioButton.Name = "froshRadioButton";
+            this.froshRadioButton.Size = new System.Drawing.Size(71, 17);
+            this.froshRadioButton.TabIndex = 3;
+            this.froshRadioButton.TabStop = true;
+            this.froshRadioButton.Text = "Freshman";
+            this.froshRadioButton.UseVisualStyleBackColor = true;
+            // 
             // PersonEditForm
             // 
             this.AcceptButton = this.okButton;
@@ -343,7 +343,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(822, 435);
-            this.Controls.Add(this.classGroupBox2);
+            this.Controls.Add(this.classGroupBox);
             this.Controls.Add(this.genderGroupBox);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
@@ -371,8 +371,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.genderGroupBox.ResumeLayout(false);
             this.genderGroupBox.PerformLayout();
-            this.classGroupBox2.ResumeLayout(false);
-            this.classGroupBox2.PerformLayout();
+            this.classGroupBox.ResumeLayout(false);
+            this.classGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +398,7 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.ErrorProvider errorProvider;
         private System.Windows.Forms.Label classOfLabel;
-        private System.Windows.Forms.GroupBox classGroupBox2;
+        private System.Windows.Forms.GroupBox classGroupBox;
         private System.Windows.Forms.GroupBox genderGroupBox;
         private System.Windows.Forms.RadioButton themRadioButton;
         private System.Windows.Forms.RadioButton herRadioButton;
