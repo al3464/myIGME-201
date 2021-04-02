@@ -51,7 +51,7 @@
             this.classOfLabel = new System.Windows.Forms.Label();
             this.himRadioButton = new System.Windows.Forms.RadioButton();
             this.herRadioButton = new System.Windows.Forms.RadioButton();
-            this.themRadioButton3 = new System.Windows.Forms.RadioButton();
+            this.themRadioButton = new System.Windows.Forms.RadioButton();
             this.froshRadioButton = new System.Windows.Forms.RadioButton();
             this.sophRadioButton = new System.Windows.Forms.RadioButton();
             this.juniorRadioButton = new System.Windows.Forms.RadioButton();
@@ -224,7 +224,7 @@
             // 
             // genderGroupBox
             // 
-            this.genderGroupBox.Controls.Add(this.themRadioButton3);
+            this.genderGroupBox.Controls.Add(this.themRadioButton);
             this.genderGroupBox.Controls.Add(this.herRadioButton);
             this.genderGroupBox.Controls.Add(this.himRadioButton);
             this.genderGroupBox.Location = new System.Drawing.Point(454, 53);
@@ -280,16 +280,16 @@
             this.herRadioButton.Text = "Her";
             this.herRadioButton.UseVisualStyleBackColor = true;
             // 
-            // themRadioButton3
+            // themRadioButton
             // 
-            this.themRadioButton3.AutoSize = true;
-            this.themRadioButton3.Location = new System.Drawing.Point(6, 65);
-            this.themRadioButton3.Name = "themRadioButton3";
-            this.themRadioButton3.Size = new System.Drawing.Size(52, 17);
-            this.themRadioButton3.TabIndex = 2;
-            this.themRadioButton3.TabStop = true;
-            this.themRadioButton3.Text = "Them";
-            this.themRadioButton3.UseVisualStyleBackColor = true;
+            this.themRadioButton.AutoSize = true;
+            this.themRadioButton.Location = new System.Drawing.Point(6, 65);
+            this.themRadioButton.Name = "themRadioButton";
+            this.themRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.themRadioButton.TabIndex = 2;
+            this.themRadioButton.TabStop = true;
+            this.themRadioButton.Text = "Them";
+            this.themRadioButton.UseVisualStyleBackColor = true;
             // 
             // froshRadioButton
             // 
@@ -400,7 +400,7 @@
         private System.Windows.Forms.Label classOfLabel;
         private System.Windows.Forms.GroupBox classGroupBox2;
         private System.Windows.Forms.GroupBox genderGroupBox;
-        private System.Windows.Forms.RadioButton themRadioButton3;
+        private System.Windows.Forms.RadioButton themRadioButton;
         private System.Windows.Forms.RadioButton herRadioButton;
         private System.Windows.Forms.RadioButton himRadioButton;
         private System.Windows.Forms.RadioButton seniorRadioButton;

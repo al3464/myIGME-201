@@ -31,6 +31,48 @@ namespace EditPerson
                 this.CenterToParent();
             }
 
+            if(person.name == null)
+            {
+                this.themRadioButton.Checked = true;
+            }
+            else
+            {
+                if (person.eGender == genderPronoun.her)
+                {
+                    this.herRadioButton.Checked = true;
+                }
+                else if(person.eGender == genderPronoun.him)
+                {
+                    this.himRadioButton.Checked = true;
+                }
+                else
+                {
+                    this.themRadioButton.Checked = true;
+                }
+            }
+
+            if(person is Student)
+            {
+                Student student = (Student)person;
+                if(student.eCollegeYear == collegeYear.freshman)
+                {
+                    this.froshRadioButton.Checked = true;
+                }
+                else if(student.eCollegeYear == collegeYear.junior)
+                {
+                    this.juniorRadioButton.Checked = true;
+                }
+                else if(student.eCollegeYear == collegeYear.sophomore)
+                {
+                    this.sophRadioButton.Checked = true;
+                }
+                else
+                {
+                    this.seniorRadioButton.Checked = true;
+                }
+
+            }
+
             this.formPerson = person;
 
             this.okButton.Enabled = false;
@@ -376,10 +418,14 @@ namespace EditPerson
             this.Close();
             this.Dispose();
         }
+
+
         private void ClassRadioButton__CheckedChanged(object sender, EventArgs e)
         {
 
         }
+
+
         private void CancelButton__Click(object sender, EventArgs e)
         {
             // if the Cancel Button was pressed
