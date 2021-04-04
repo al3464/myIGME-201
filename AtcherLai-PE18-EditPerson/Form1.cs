@@ -395,6 +395,7 @@ namespace EditPerson
             {
                 student = new Student();
                 person = student;
+               
             }
             else
             {
