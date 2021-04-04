@@ -65,30 +65,30 @@ namespace CourseList
             // (this is the Event Handler for the mouse double-click on a row of the ListView)
             // (the ListView control is called this.courseListView)
             // (refer to the Windows Form Controls Word Document in myCourses for the event handler syntax)
-            
+            this.courseListView.ItemActivate += new EventHandler(CourseListView__ItemActivate);
 
             // 3. Add courseListView KeyDown Event Handler with CourseListView__KeyDown
             // (this is the Event Handler for pressing Enter on a row of the ListView)
-            
+            this.courseListView.KeyDown += new KeyEventHandler(CourseListView__KeyDown);
 
             // 4. Add courseListView SelectedIndexChanged Event Handler with CourseListView__SelectedIndexChanged
             // (this is the Event Handler for using the arrow keys or single-clicking on another row of the ListView)
-            
+            this.courseListView.SelectedIndexChanged += new EventHandler(CourseListView__SelectedIndexChanged);
 
             // 5. disable updateButton (using the Enabled property)
-            
+
 
             // 6. disable courseCodeTextBox
-            
+
 
             // 7. disable courseDescriptionTextBox
-            
+
 
             // 8. disable reviewRichTextBox
-            
+
 
             // 9. set focus on courseListView by calling the object's Focus() method
-            
+
 
             this.updateButton.Click += new EventHandler(UpdateButton__Click);
             this.exitButton.Click += new EventHandler(ExitButton__Click);
