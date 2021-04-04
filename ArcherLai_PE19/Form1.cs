@@ -88,7 +88,7 @@ namespace CourseList
             this.reviewRichTextBox.Enabled = false;
 
             // 9. set focus on courseListView by calling the object's Focus() method
-            courseListView.Focus();
+            this.courseListView.Focus();
 
             this.updateButton.Click += new EventHandler(UpdateButton__Click);
             this.exitButton.Click += new EventHandler(ExitButton__Click);
@@ -111,36 +111,38 @@ namespace CourseList
 
             // 10. if a firstCourseCode to display at top of the list was passed in
             //if(    )
+            if(firstCourseCode != null)
             {
                 // 11. fetch the index of firstCourseCode from the Globals.courses.sortedList
                 // using the IndexOfKey method
-                
+                nStartEl = Globals.courses.sortedList.IndexOfKey(firstCourseCode);
             }
 
             // 12. clear the listview items
-            
+            this.courseListView.Clear();
 
             // 13. lock the listview to begin updating it
-            
+            courseListView.BeginUpdate();
 
             int lviCntr = 0;
 
             // 14. loop through all courses in Globals.courses.sortedList and insert them in the ListView
             // foreach ( )
+            foreach (KeyValuePair<string, Course> keyValuePair in Globals.courses.sortedList)
             {
                 Course thisCourse = null;
 
                 // 15. set thisCourse to the Value in the current keyValuePair
-                
+                Course thisCourses = keyValuePair.Value;
 
                 // 16. create a new ListViewItem named lvi
-                
+                lvi = new ListViewItem();
 
                 // 17. set the first column of this row to show thisCourse.courseCode
-                
+                lvi.Text = thisCourse.courseCode;
 
                 // 18. set the Tag property for this ListViewItem to the courseCode
-                
+                lvi.Tag = thisCourse.courseCode;
 
                 // alternate row color
                 if (lviCntr % 2 == 0)
@@ -154,43 +156,43 @@ namespace CourseList
 
 
                 // 19. create a new ListViewItem.ListViewSubItem named lvsi for the next column
-                
+                lvsi = new ListViewItem.ListViewSubItem();
 
                 // 20. set the column to show thisCourse.description
-                
+
 
                 // 21. add lvsi to lvi.SubItems
-                
+
 
                 // 22. create a new ListViewItem.ListViewSubItem named lvsi for the next column
-                
+
 
                 // 23. set the column to show thisCourse.teacherEmail
-                
+
 
                 // 24. add lvsi to lvi.SubItems
-                
+
 
 
                 // 25. create a new ListViewItem.ListViewSubItem named lvsi for the next column
-                
+
 
                 // 26. set the column to show thisCourse.schedule.DaysOfWeek()
                 // note that thisCourse.schedule.DaysOfWeek() returns the string that we want to display
-                
+
 
                 // 27. add lvsi to lvi.SubItems
-                
+
 
                 // 28. create a new ListViewItem.ListViewSubItem named lvsi for the next column
-                
+
 
                 // 29. set the column to show thisCourse.schedule.GetTimes()
                 // note that thisCourse.schedule.GetTimes() returns the string that we want to display
-                
+
 
                 // 30. add lvsi to lvi.SubItems
-                
+
 
 
                 // 31. if this row is the row that we are supposed to show at the top of the list
@@ -239,28 +241,28 @@ namespace CourseList
             if (course != null)
             {
                 // 41. set courseCodeTextBox to hold the courseCode
-            
+
 
                 // 42. set courseDescriptionTextBox to hold the description
-                
+
 
                 // 43. set the reviewRichTextBox to hold the review
-                
+
 
                 // 44. disable the ListView lv using the Enabled property
-                
+
 
                 // 45. enable courseCodeTextBox
-                
+                this.courseCodeTextBox.Enabled = true;
 
                 // 46. enable courseDescriptionTextBox
-                
+                this.courseDescriptionTextBox.Enabled = true;
 
                 // 47. enable reviewRichTextBox
-                
+                this.reviewRichTextBox.Enabled = true;
 
                 // 48. enable the updateButton
-                
+                this.updateButton.Enabled = true;
             }
         }
 
@@ -290,28 +292,28 @@ namespace CourseList
                     if (course != null)
                     {
                         // 53. set courseCodeTextBox to hold the courseCode
-                        
+
 
                         // 54. set courseDescriptionTextBox to hold the description
-                        
+
 
                         // 55. set the reviewRichTextBox to hold the review
-                        
+
 
                         // 56. disable the ListView
-                        
+                        this.updateButton.Enabled = true;
 
                         // 57. enable courseCodeTextBox
-                        
+                        this.courseCodeTextBox.Enabled = true;
 
                         // 58. enable courseDescriptionTextBox
-                        
+                        this.courseDescriptionTextBox.Enabled = true;
 
                         // 59. enable reviewRichTextBox
-                        
+                        this.reviewRichTextBox.Enabled = true;
 
                         // 60. enable the updateButton
-                        
+                        this.updateButton.Enabled = true;
                     }
                 }
                 catch
@@ -401,7 +403,7 @@ namespace CourseList
             Globals.courses[copyCourse.courseCode] = copyCourse;
 
             // 69. enable the courseListView
-            
+            this.courseListView.Enabled = true;
 
             // set the focus to the courseListView
             this.courseListView.Focus();
@@ -419,7 +421,7 @@ namespace CourseList
             this.updateButton.Enabled = false;
 
             // 74. call PaintListView with the courseCode that should be shown at the top of the list
-
+            PaintListView(null);
         }
 
         private void ExitButton__Click(object sender, EventArgs e)
