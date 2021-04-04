@@ -407,19 +407,19 @@ namespace CourseList
             this.courseListView.Focus();
 
             // 70. disable courseCodeTextBox
-            
+            this.courseCodeTextBox.Enabled = false;
 
             // 71. disable courseDescriptionTextBox
-            
+            this.courseDescriptionTextBox.Enabled = false;
 
             // 72. disable reviewRichTextBox
-            
+            this.reviewRichTextBox.Enabled = false;
 
             // 73. disable updateButton
-            
+            this.updateButton.Enabled = false;
 
             // 74. call PaintListView with the courseCode that should be shown at the top of the list
-            
+
         }
 
         private void ExitButton__Click(object sender, EventArgs e)
