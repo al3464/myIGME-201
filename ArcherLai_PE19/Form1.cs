@@ -197,30 +197,31 @@ namespace CourseList
 
                 // 31. if this row is the row that we are supposed to show at the top of the list
                 //if (  )
+                if (lviCntr == nStartEl)
                 {
                     // 32. set this ListViewItem to selected
-                    
+                    lvi.Selected = true;
 
                     // 33. set this ListViewItem to be focused upon (otherwise the current focus defaults to the first in the list)
-                    
+                    lvi.Focused = true;
 
                     // 34. save a reference to this ListViewItem in firstLVI
-                    
+                    firstLVI = lvi;
                 }
 
                 // 35. lvi is all filled in for all columns for this row so add it to courseListView.Items
-                
+                this.courseListView.Items.Add(lvi);
 
                 // 36. increment our counter to alternate colors and check for nStartEl
-                
+                ++lviCntr;
             }
 
 
             // 37. unlock the ListView since we are done updating the contents
-            
+            this.courseListView.EndUpdate();
 
             // 38. set courseListView.TopItem to be firstLVI
-            
+            this.courseListView.TopItem = firstLVI;
         }
 
 
@@ -233,15 +234,15 @@ namespace CourseList
             string courseCode = null;
 
             // 39. get the courseCode from the currently selected row
-            
+            courseCode = courseListView.SelectedItems[0].Tag.ToString();
 
             // 40. get the course object associated with this courseCode from Globals.courses SortedList
-            
+
 
             if (course != null)
             {
                 // 41. set courseCodeTextBox to hold the courseCode
-
+                course = Globals.courses[courseCode];
 
                 // 42. set courseDescriptionTextBox to hold the description
 
@@ -250,7 +251,7 @@ namespace CourseList
 
 
                 // 44. disable the ListView lv using the Enabled property
-
+                this.Enabled = false;
 
                 // 45. enable courseCodeTextBox
                 this.courseCodeTextBox.Enabled = true;
@@ -277,17 +278,18 @@ namespace CourseList
 
             // 49. if Enter was pressed, we will handle it
             //if ( )
+            if (e.KeyCode == Keys.Enter)
             {
                 // 50. remove the key from the keyboard buffer, we handled it
-                
+                //e.KeyBoardBuffer.Remove(Keys.Enter);
 
                 try
                 {
                     // 51. get the courseCode from the currently selected row
-                    
+                    courseCode = courseListView.SelectedItems[0].Tag.ToString();
 
                     // 52. get the course object associated with this courseCode from Globals.courses
-                    
+                    //Globals.courses.(courseCode);
 
                     if (course != null)
                     {
@@ -335,10 +337,10 @@ namespace CourseList
             try
             {
                 // 61. get the courseCode from the currently selected row
-                
+                courseCode = courseListView.SelectedItems[0].Tag.ToString();
 
                 // 62. get the course object associated with this courseCode from courses
-                
+
             }
             catch
             {
