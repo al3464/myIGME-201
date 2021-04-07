@@ -16,5 +16,10 @@ namespace ArcherLai_PE21
         {
             InitializeComponent();
         }
+
+        private void extToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
