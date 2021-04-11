@@ -456,5 +456,10 @@ namespace EditPerson
             this.Close();
             this.Dispose();
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
