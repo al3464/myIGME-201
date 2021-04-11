@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcherLai_PE23", "ArcherLai_PE23.csproj", "{4EE51CB3-B0E2-4665-B92B-30069C8D61AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcherLai_PE21", "ArcherLai_PE21.csproj", "{37D9FDD3-CBD4-4D30-B753-8EC6A77DA958}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4EE51CB3-B0E2-4665-B92B-30069C8D61AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EE51CB3-B0E2-4665-B92B-30069C8D61AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EE51CB3-B0E2-4665-B92B-30069C8D61AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EE51CB3-B0E2-4665-B92B-30069C8D61AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D9FDD3-CBD4-4D30-B753-8EC6A77DA958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D9FDD3-CBD4-4D30-B753-8EC6A77DA958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D9FDD3-CBD4-4D30-B753-8EC6A77DA958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D9FDD3-CBD4-4D30-B753-8EC6A77DA958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {00D29F77-6E72-481E-B5E8-FD1FFE75E50F}
+		SolutionGuid = {93779D89-9F66-486B-B6E0-255BB98BB984}
 	EndGlobalSection
 EndGlobal
