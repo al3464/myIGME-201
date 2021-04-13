@@ -36,6 +36,65 @@ namespace ArcherLai_PE24
             timer1.Tick += new EventHandler(Timer1__Tick);
 
             webBrowser1.Navigate("http://people.rit.edu/dxsigm/gif-finder.html");
+
+            this.tileToolStripMenuItem.Click += new EventHandler(TileToolStripMenuItem__Click);
+            this.cascadeToolStripMenuItem.Click += new EventHandler(CascadeToolStripMenuItem__Click);
+            this.exitToolStripMenuItem.Click += new EventHandler(ExitToolStripItem__Click);
+            this.newSearchToolStripMenuItem.Click += new EventHandler(NewSearchToolStripMenuItem__Click)
+        }
+
+        private void TileToolStripMenuItem__Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void CascadeToolStripMenuItem__Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void ExitToolStripItem__Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void NewSearchToolStripMenuItem__Click(object sender, EventArgs e)
+        {
+            this.searchForm.ShowDialog();
+            if(searchForm.response == "OK")
+            {
+                HtmlElement htmlElement;
+
+                htmlElement = webBrowser1.Document.GetElementById("searchterm");
+                htmlElement.SetAttribute("value", searchForm.searchTerm);
+
+                htmlElement = webBrowser1.Document.GetElementById("limit");
+                htmlElement.SetAttribute("Value", Convert.ToString(searchForm.maxItems));
+
+                webBrowser1.Document.InvokeScript("Search");
+
+                timer1.Start();
+
+            }
+        }
+
+        private void Timer1__Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            HtmlElement htmlElement = webBrowser1.Document.GetElementById("lastelement");
+
+            if(htmlElement != null)
+            {
+                HtmlElementCollection htmlElementCollection;
+                htmlElementCollection = webBrowser1.Document.GetElementsByTagName("img");
+                foreach (HtmlElement htmlElement1 in htmlElementCollection)
+                {
+
+                }
+                {
+
+                }
+            }
         }
     }
 }
