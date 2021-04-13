@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArcherLai_PE21
+namespace ArcherLai_PE24
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ArcherLai_PE21
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyEditorParent());
+            Application.Run(new Form1());
         }
     }
 }
