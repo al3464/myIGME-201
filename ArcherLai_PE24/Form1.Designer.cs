@@ -121,7 +121,7 @@ namespace ArcherLai_PE24
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(538, 171);
+            this.webBrowser1.Location = new System.Drawing.Point(519, 170);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(250, 250);
@@ -138,7 +138,7 @@ namespace ArcherLai_PE24
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GifFinder";
-            this.Text = "Form1";
+            this.Text = "GifFinder";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

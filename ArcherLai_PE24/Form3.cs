@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ArcherLai_PE24
 {
@@ -50,7 +51,25 @@ namespace ArcherLai_PE24
             saveFileDialog1.FileName = this.title;
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                switch (Path.GetExtension(saveFileDialog1.FileName).ToUpper())
+                {
+                    case ".BMP":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Bmp);
+                        break;
 
+                    case ".JPG":
+                    case ".JPEG":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        break;
+
+                    case ".PNG":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                        break;
+
+                    case ".GIF":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Gif);
+                        break;
+                }
             }
         }
     }
