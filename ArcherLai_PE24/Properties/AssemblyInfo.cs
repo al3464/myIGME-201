@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ArcherLai_PE24")]
+[assembly: AssemblyTitle("ArcherLai_PE21")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ArcherLai_PE24")]
+[assembly: AssemblyProduct("ArcherLai_PE21")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ed8d32d2-ea7a-4bfa-97c3-741f3d25ed83")]
+[assembly: Guid("37d9fdd3-cbd4-4d30-b753-8ec6a77da958")]
 
 // Version information for an assembly consists of the following four values:
 //
