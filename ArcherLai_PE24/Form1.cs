@@ -34,13 +34,13 @@ namespace ArcherLai_PE24
 
             timer1.Interval = 100;
             timer1.Tick += new EventHandler(Timer1__Tick);
-
+            webBrowser1.ScriptErrorsSuppressed = true;
             webBrowser1.Navigate("http://people.rit.edu/dxsigm/gif-finder.html");
 
             this.tileToolStripMenuItem.Click += new EventHandler(TileToolStripMenuItem__Click);
             this.cascadeToolStripMenuItem.Click += new EventHandler(CascadeToolStripMenuItem__Click);
             this.exitToolStripMenuItem.Click += new EventHandler(ExitToolStripItem__Click);
-            this.newSearchToolStripMenuItem.Click += new EventHandler(NewSearchToolStripMenuItem__Click)
+            this.newSearchToolStripMenuItem.Click += new EventHandler(NewSearchToolStripMenuItem__Click);
         }
 
         private void TileToolStripMenuItem__Click(object sender, EventArgs e)
@@ -91,9 +91,7 @@ namespace ArcherLai_PE24
                 {
 
                 }
-                {
-
-                }
+               
             }
         }
     }
