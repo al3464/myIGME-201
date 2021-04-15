@@ -33,16 +33,16 @@ namespace ArcherLai_PE25
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.teacherButton = new System.Windows.Forms.Button();
-            this.studentButton = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.studentButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.emailLabel = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.photoGroupBox = new System.Windows.Forms.GroupBox();
             this.photoPictureBox = new System.Windows.Forms.PictureBox();
+            this.photoGroupBox = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -50,8 +50,8 @@ namespace ArcherLai_PE25
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.photoGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
+            this.photoGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -66,12 +66,11 @@ namespace ArcherLai_PE25
             // 
             this.splitContainer1.Panel1.Controls.Add(this.teacherButton);
             this.splitContainer1.Panel1.Controls.Add(this.studentButton);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel1);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 130;
             this.splitContainer1.TabIndex = 0;
@@ -87,6 +86,13 @@ namespace ArcherLai_PE25
             this.teacherButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.teacherButton.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "student.png");
+            this.imageList1.Images.SetKeyName(1, "teacher.png");
+            // 
             // studentButton
             // 
             this.studentButton.ImageKey = "student.png";
@@ -97,13 +103,6 @@ namespace ArcherLai_PE25
             this.studentButton.TabIndex = 2;
             this.studentButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.studentButton.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "student.png");
-            this.imageList1.Images.SetKeyName(1, "teacher.png");
             // 
             // flowLayoutPanel1
             // 
@@ -125,6 +124,14 @@ namespace ArcherLai_PE25
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(189, 155);
             this.panel1.TabIndex = 0;
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.Location = new System.Drawing.Point(3, 25);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(179, 23);
+            this.emailLabel.TabIndex = 1;
+            this.emailLabel.Text = "label1";
             // 
             // toolStrip1
             // 
@@ -157,35 +164,27 @@ namespace ArcherLai_PE25
             this.toolStripLabel1.Text = "toolStripLabel1";
             this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // emailLabel
-            // 
-            this.emailLabel.Location = new System.Drawing.Point(3, 25);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(179, 23);
-            this.emailLabel.TabIndex = 1;
-            this.emailLabel.Text = "label1";
-            // 
-            // photoGroupBox
-            // 
-            this.photoGroupBox.Controls.Add(this.photoPictureBox);
-            this.photoGroupBox.Location = new System.Drawing.Point(6, 51);
-            this.photoGroupBox.Name = "photoGroupBox";
-            this.photoGroupBox.Size = new System.Drawing.Size(139, 97);
-            this.photoGroupBox.TabIndex = 52;
-            this.photoGroupBox.TabStop = false;
-            this.photoGroupBox.Text = "Photo";
-            // 
             // photoPictureBox
             // 
             this.photoPictureBox.BackColor = System.Drawing.Color.LightGray;
             this.photoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.photoPictureBox.Location = new System.Drawing.Point(3, 16);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(133, 78);
+            this.photoPictureBox.Size = new System.Drawing.Size(115, 68);
             this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.photoPictureBox.TabIndex = 0;
             this.photoPictureBox.TabStop = false;
-            this.photoPictureBox.Click += new System.EventHandler(this.photoPictureBox_Click);
+            
+            // 
+            // photoGroupBox
+            // 
+            this.photoGroupBox.Controls.Add(this.photoPictureBox);
+            this.photoGroupBox.Location = new System.Drawing.Point(6, 51);
+            this.photoGroupBox.Name = "photoGroupBox";
+            this.photoGroupBox.Size = new System.Drawing.Size(121, 87);
+            this.photoGroupBox.TabIndex = 52;
+            this.photoGroupBox.TabStop = false;
+            this.photoGroupBox.Text = "Photo";
             // 
             // Form1
             // 
@@ -204,8 +203,8 @@ namespace ArcherLai_PE25
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.photoGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
+            this.photoGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

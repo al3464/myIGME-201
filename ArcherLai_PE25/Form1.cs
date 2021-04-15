@@ -42,7 +42,7 @@ namespace ArcherLai_PE25
         {
             InitializeComponent();
 
-            Globals.AddCoursesSampleData();
+            Globals.AddPeopleSampleData();
 
             this.teacherButton.Click += new EventHandler(TeacherButton__Click);
             this.studentButton.Click += new EventHandler(StudentButton__Click);
@@ -102,7 +102,7 @@ namespace ArcherLai_PE25
         {
             Panel panel1 = new System.Windows.Forms.Panel();
 
-            
+            AddPersonToPanel(ref panel1, person);
 
             this.flowLayoutPanel1.Controls.Add(panel1);
             this.flowLayoutPanel1.Controls.SetChildIndex(panel1, flowLayoutPanel1.Controls.Count);
@@ -118,9 +118,9 @@ namespace ArcherLai_PE25
             PictureBox photoPictureBox = new System.Windows.Forms.PictureBox();
 
             panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            panel1.Controls.Add(this.emailLabel);
-            panel1.Controls.Add(this.photoGroupBox);
-            panel1.Controls.Add(this.toolStrip1);
+            panel1.Controls.Add(emailLabel);
+            panel1.Controls.Add(photoGroupBox);
+            panel1.Controls.Add(toolStrip1);
             panel1.Location = new System.Drawing.Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(189, 155);
@@ -180,7 +180,8 @@ namespace ArcherLai_PE25
             photoGroupBox.Size = new System.Drawing.Size(139, 97);
             photoGroupBox.TabIndex = 52;
             photoGroupBox.TabStop = false;
-            photoPictureBox.ImageLocation = person.photoPath;
+            photoGroupBox.Text = "Photo";
+            
             // 
             // photoPictureBox
             // 
@@ -192,7 +193,7 @@ namespace ArcherLai_PE25
             photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             photoPictureBox.TabIndex = 0;
             photoPictureBox.TabStop = false;
-            photoPictureBox.Click += new System.EventHandler(this.photoPictureBox_Click);
+            photoPictureBox.ImageLocation = person.photoPath;
         }
   
         
@@ -216,21 +217,7 @@ namespace ArcherLai_PE25
             p.Refresh();
         }
 
-
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void photoPictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
+   
+    
     }
 }
