@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CourseLib">
+      <HintPath>WindowsPeopleApp\CourseLib\bin\Debug\CourseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="EditPerson">
+      <HintPath>WindowsPeopleApp\EditPerson\bin\Debug\EditPerson.dll</HintPath>
+    </Reference>
+    <Reference Include="PeopleAppGlobals">
+      <HintPath>WindowsPeopleApp\PeopleAppGlobals\bin\Debug\PeopleAppGlobals.dll</HintPath>
+    </Reference>
+    <Reference Include="PeopleLib">
+      <HintPath>WindowsPeopleApp\PeopleLib\bin\Debug\PeopleLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

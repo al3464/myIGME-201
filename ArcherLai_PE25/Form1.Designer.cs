@@ -41,6 +41,8 @@ namespace ArcherLai_PE25
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.emailLabel = new System.Windows.Forms.Label();
+            this.photoGroupBox = new System.Windows.Forms.GroupBox();
+            this.photoPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -48,6 +50,8 @@ namespace ArcherLai_PE25
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.photoGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -115,6 +119,7 @@ namespace ArcherLai_PE25
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.emailLabel);
+            this.panel1.Controls.Add(this.photoGroupBox);
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -160,6 +165,28 @@ namespace ArcherLai_PE25
             this.emailLabel.TabIndex = 1;
             this.emailLabel.Text = "label1";
             // 
+            // photoGroupBox
+            // 
+            this.photoGroupBox.Controls.Add(this.photoPictureBox);
+            this.photoGroupBox.Location = new System.Drawing.Point(6, 51);
+            this.photoGroupBox.Name = "photoGroupBox";
+            this.photoGroupBox.Size = new System.Drawing.Size(139, 97);
+            this.photoGroupBox.TabIndex = 52;
+            this.photoGroupBox.TabStop = false;
+            this.photoGroupBox.Text = "Photo";
+            // 
+            // photoPictureBox
+            // 
+            this.photoPictureBox.BackColor = System.Drawing.Color.LightGray;
+            this.photoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.photoPictureBox.Location = new System.Drawing.Point(3, 16);
+            this.photoPictureBox.Name = "photoPictureBox";
+            this.photoPictureBox.Size = new System.Drawing.Size(133, 78);
+            this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.photoPictureBox.TabIndex = 0;
+            this.photoPictureBox.TabStop = false;
+            this.photoPictureBox.Click += new System.EventHandler(this.photoPictureBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +204,8 @@ namespace ArcherLai_PE25
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.photoGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -193,6 +222,8 @@ namespace ArcherLai_PE25
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.GroupBox photoGroupBox;
+        private System.Windows.Forms.PictureBox photoPictureBox;
     }
 }
 
