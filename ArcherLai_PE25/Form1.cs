@@ -74,7 +74,7 @@ namespace ArcherLai_PE25
                 }
             }
 
-            teacherButton.Text = this.flowLayoutPanel1.Controls.Count.ToString();
+            studentButton.Text = this.flowLayoutPanel1.Controls.Count.ToString();
         }
 
         private void ToolStripButton1__Click(object sender, EventArgs e)
