@@ -1,7 +1,7 @@
 ﻿
 namespace ArcherLai_PE27
 {
-    partial class Form1
+    partial class SettingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,58 @@ namespace ArcherLai_PE27
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.startButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.portTextBox = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // startButton
+            // 
+            this.startButton.Location = new System.Drawing.Point(67, 72);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(112, 48);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "Start Listener";
+            this.startButton.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Listener Point";
+            // 
+            // portTextBox
+            // 
+            this.portTextBox.Location = new System.Drawing.Point(114, 33);
+            this.portTextBox.Name = "portTextBox";
+            this.portTextBox.Size = new System.Drawing.Size(100, 20);
+            this.portTextBox.TabIndex = 2;
+            // 
+            // SettingsForm
+            // 
+            this.AcceptButton = this.startButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(259, 153);
+            this.ControlBox = false;
+            this.Controls.Add(this.portTextBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.startButton);
+            this.Name = "SettingsForm";
+            this.Text = "Settings";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox portTextBox;
     }
 }
 
