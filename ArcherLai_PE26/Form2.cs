@@ -18,10 +18,10 @@ namespace ArcherLai_PE27
 
     public partial class DyscordForm : Form
     {
-        string targetUser;
-        string targetIp;
+        string targetUser = "";
+        string targetIp = "";
         int targetPort;
-        string myIp;
+        string myIp = "";
         int myPort = 2222;
         Thread thread;
         Socket listener;
@@ -44,7 +44,7 @@ namespace ArcherLai_PE27
             IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
             foreach(IPAddress iPAddress in ipHost.AddressList)
             {
-                if(IPAddress.AddressFamily = AddressFamily.InterNetwork)
+                if(iPAddress.AddressFamily == AddressFamily.InterNetwork)
                 {
                     this.myIp = iPAddress.ToString();
                     break;
@@ -83,18 +83,61 @@ namespace ArcherLai_PE27
             htmlElementCollection = webBrowser1.Document.GetElementsByTagName("button");
             foreach(HtmlElement htmlElement in htmlElementCollection)
             {
-
+                htmlElement.Click += new HtmlElementEventHandler(HtmlElement__Click);
             }
         }
 
+        private void HtmlElement__Click(object sender, EventArgs e)
+        {
+            string title;
+            string[] ipPort;
+
+            HtmlElement htmlElement = (HtmlElement)sender;
+
+            title = htmlElement.GetAttribute("title");
+            ipPort = title.Split(':');
+            this.targetIp = ipPort[0];
+            this.targetPort = Int32.Parse(ipPort[1]);
+
+            this.targetUser = htmlElement.GetAttribute("name");
+            this.groupBox1.Text = "Conversing with" + targetUser;
+
+            webBrowser1.Visible = false;
+            webBrowser1.SendToBack();
+        }
+
+
         private void SendButton__Click(object sender, EventArgs e)
         {
+            if(this.targetIp.Length > 0)
+            {
+                IPAddress iPAddress = IPAddress.Parse(this.targetIp);
+                IPEndPoint remoteEndPoint = new IPEndPoint(iPAddress, this.targetPort);
 
+                Socket server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                server.Connect(remoteEndPoint);
+                Stream netStream = new NetworkStream(server);
+                StreamWriter writer = new StreamWriter(netStream);
+
+                string msg = userTextBox.Text + ": " + msgRichTextBox.Text;
+                writer.Write(msg.ToCharArray(), 0, msg.Length);
+
+                writer.Close();
+                netStream.Close();
+                server.Close();
+
+                this.convRichTextBox.Text += "> " + this.targetUser + ": " + msgRichTextBox.Text + "\n";
+
+                msgRichTextBox.Clear();
+            }
         }
 
         private void ExitButton__Click(object sender, EventArgs e)
         {
+            listener.Close();
+            thread.Abort();
 
+            Application.Exit();
         }
 
 

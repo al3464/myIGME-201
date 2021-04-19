@@ -16,7 +16,7 @@ namespace ArcherLai_PE27
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SettingsForm());
+            Application.Run(new DyscordForm());
         }
     }
 }
