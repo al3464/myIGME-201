@@ -16,6 +16,7 @@ namespace ArcherLai_PE27
         public SettingsForm(Form owner, int nPort)
         {
             InitializeComponent();
+
             this.Owner = owner;
             this.CenterToParent();
             this.myPort = nPort;
