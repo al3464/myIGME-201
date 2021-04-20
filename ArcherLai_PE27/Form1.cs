@@ -33,7 +33,7 @@ namespace ArcherLai_PE27
 
         private void PortTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(Char.IsDigit(e.KeyChar)||e.KeyChar == '\b')
+            if(Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
             {
                 e.Handled = false;
             }
