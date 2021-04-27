@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
-namespace ArcherLai_UnitTest3Q3
+namespace ArcherLai_UnitTest3Q1
 {
     public partial class Form1 : Form
     {
