@@ -26,6 +26,7 @@ namespace ArcherLai_UnitTest3Q3
             exitButton.Click += new EventHandler(ExitButton__Click);
             searchButton.Click += new EventHandler(SearchButton__Click);
             clearButton.Click += new EventHandler(ClearButton__Click);
+            listenerButton.Click += new EventHandler(ListenerButton__Click);
         }
 
         
@@ -47,6 +48,15 @@ namespace ArcherLai_UnitTest3Q3
             form2.Show();
 
         }
+
+        private void ListenerButton__Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form3 = new Form3();
+            form3.Closed += (s, args) => this.Close();
+            form3.Show();
+        }
+
         private void RadioButton1__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/us/");
