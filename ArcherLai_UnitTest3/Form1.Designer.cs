@@ -31,6 +31,7 @@ namespace ArcherLai_UnitTest3
         {
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -46,16 +47,26 @@ namespace ArcherLai_UnitTest3
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 56);
+            this.textBox1.Location = new System.Drawing.Point(103, 11);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(28, 20);
             this.textBox1.TabIndex = 1;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(713, 415);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton1);
             this.Name = "Form1";
@@ -69,6 +80,7 @@ namespace ArcherLai_UnitTest3
 
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
