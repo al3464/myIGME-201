@@ -68,7 +68,6 @@ namespace ArcherLai_UnitTest3Q1
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.allButton = new System.Windows.Forms.RadioButton();
             this.democratButton = new System.Windows.Forms.RadioButton();
             this.repulblicanButton = new System.Windows.Forms.RadioButton();
@@ -79,10 +78,12 @@ namespace ArcherLai_UnitTest3Q1
             this.exitButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -456,16 +457,6 @@ namespace ArcherLai_UnitTest3Q1
             this.webBrowser1.TabIndex = 1;
             this.webBrowser1.Url = new System.Uri("https://en.m.wikipedia.org/wiki/Benjamin_Harrison", System.UriKind.Absolute);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ArcherLai_UnitTest3Q1.Properties.Resources.BenjaminHarrison;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 232);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 174);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            // 
             // allButton
             // 
             this.allButton.AutoSize = true;
@@ -523,6 +514,8 @@ namespace ArcherLai_UnitTest3Q1
             // 
             // progressBar1
             // 
+            this.progressBar1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.progressBar1.BackColor = System.Drawing.Color.White;
             this.progressBar1.Location = new System.Drawing.Point(-5, 570);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(647, 23);
@@ -583,11 +576,29 @@ namespace ArcherLai_UnitTest3Q1
             this.panel1.Size = new System.Drawing.Size(331, 214);
             this.panel1.TabIndex = 37;
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(85, 313);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(80, 17);
+            this.hScrollBar1.TabIndex = 38;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ArcherLai_UnitTest3Q1.Properties.Resources.BenjaminHarrison;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 232);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 584);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.progressBar1);
@@ -600,9 +611,9 @@ namespace ArcherLai_UnitTest3Q1
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,6 +668,7 @@ namespace ArcherLai_UnitTest3Q1
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
     }
 }
 

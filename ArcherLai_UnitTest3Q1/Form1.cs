@@ -12,10 +12,22 @@ namespace ArcherLai_UnitTest3Q1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
+            
             InitializeComponent();
             this.exitButton.Click += new EventHandler(ExitButton__Click);
+
+            float pbZoom = 3f;  // the factor by which the PictureBox is zoomed in or out
+
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.ClientSize = new Size((int)(pictureBox1.Image.Width * pbZoom),
+                     (int)(pictureBox1.Image.Height * pbZoom));
+
+
+            pictureBox1.MouseMove += new MouseEventHandler(PictureBox1_MouseMove);
+
             radioButton1.CheckedChanged += new EventHandler(RadioButton1__CheckedChanged);
             radioButton2.CheckedChanged += new EventHandler(RadioButton2__CheckedChanged);
             radioButton3.CheckedChanged += new EventHandler(RadioButton3__CheckedChanged);
@@ -57,13 +69,37 @@ namespace ArcherLai_UnitTest3Q1
             textBox14.KeyPress += new KeyPressEventHandler(TextBox14__KeyPress);
             textBox15.KeyPress += new KeyPressEventHandler(TextBox15__KeyPress);
             textBox16.KeyPress += new KeyPressEventHandler(TextBox16__KeyPress);
+            
         }
+        
+
+        
+
+
+
 
         private void ExitButton__Click(object sender, EventArgs e)
         {
             Application.Exit();
             
         }
+        Bitmap img1 = Properties.Resources.BenjaminHarrison;
+        Bitmap img2 = Properties.Resources.FranklinDRoosevelt;
+        Bitmap img3 = Properties.Resources.WilliamJClinton;
+        Bitmap img4 = Properties.Resources.JamesBuchanan;
+        Bitmap img5 = Properties.Resources.FranklinPierce;
+        Bitmap img6 = Properties.Resources.GeorgeWBush;
+        Bitmap img7 = Properties.Resources.BarackObama;
+        Bitmap img8 = Properties.Resources.JohnFKennedy;
+        Bitmap img9 = Properties.Resources.ThomasJefferson;
+        Bitmap img10 = Properties.Resources.TheodoreRoosevelt;
+        Bitmap img11 = Properties.Resources.JohnAdams;
+        Bitmap img12 = Properties.Resources.GeorgeWashington;
+        Bitmap img13 = Properties.Resources.MartinVanBuren;
+        Bitmap img14 = Properties.Resources.DwightDEisenhower;
+        Bitmap img15 = Properties.Resources.RonaldReagan;
+        Bitmap img16 = Properties.Resources.WilliamMcKinley;
+
 
         private void WebBrowser1__DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
@@ -76,9 +112,15 @@ namespace ArcherLai_UnitTest3Q1
         {
             this.progressBar1.Increment(1);
         }
-        
 
-            private void AllButton__CheckedChanged(object sender, EventArgs e)
+        private void PictureBox1_MouseMove()
+        {
+
+        }
+
+
+
+        private void AllButton__CheckedChanged(object sender, EventArgs e)
         {
             radioButton1.Visible = true;
             radioButton2.Visible = true;
@@ -181,23 +223,30 @@ namespace ArcherLai_UnitTest3Q1
 
         private void RadioButton1__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img1;
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Benjamin_Harrison");
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Benjamin_Harrison");
         }
 
         private void RadioButton2__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img2;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt";
+            
+               
         }
 
         private void RadioButton3__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img3;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_J_Clinton");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_J_Clinton";
         }
 
         private void RadioButton4__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img4;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_J_Clinton");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_J_Clinton";
         }
@@ -205,12 +254,14 @@ namespace ArcherLai_UnitTest3Q1
         private void RadioButton5__CheckedChanged(object sender, EventArgs e)
             
         {
+            pictureBox1.Image = img5;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_Pierce");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Franklin_Pierce";
         }
 
         private void RadioButton6__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img6;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_W_Bush");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/George_W_Bush";
 
@@ -218,6 +269,7 @@ namespace ArcherLai_UnitTest3Q1
 
         private void RadioButton7__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img7;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Barack_Obama");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Barack_Obama";
 
@@ -225,54 +277,63 @@ namespace ArcherLai_UnitTest3Q1
 
         private void RadioButton8__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img8;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_F_Kennedy");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/John_F_Kennedy";
         }
 
         private void RadioButton16__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img16;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_McKinley");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_McKinley";
         }
 
         private void RadioButton15__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img15;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Ronald_Reagan");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Ronald_Reagan";
         }
 
         private void RadioButton14__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img14;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Dwight_D_Eisenhower");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Dwight_D_Eisenhower";
         }
 
         private void RadioButton13__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img13;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Martin_VanBuren");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Martin_VanBuren";
         }
 
         private void RadioButton12__CheckedChanged(object sender, EventArgs e)
         {
+                pictureBox1.Image = img12;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_Washington");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/George_Washington";
         }
 
         private void RadioButton11__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img11;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_Adams");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/John_Adams";
         }
 
         private void RadioButton10__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img10;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Theodore_Roosevelt");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Theodore_Roosevelt";
         }
 
         private void RadioButton9__CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox1.Image = img9;
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Thomas_Jefferson");
             groupBox1.Text = "https://en.m.wikipedia.org/wiki/Thomas_Jefferson";
         }
@@ -285,6 +346,14 @@ namespace ArcherLai_UnitTest3Q1
         private void TextBox1__KeyPress(object sender, EventArgs e)
         {
             this.timer1.Start();
+            if(textBox1.Text == "1")
+            {
+                notifyIcon1.Visible = false;
+            }
+            else
+            {
+                notifyIcon1.Visible = true;
+            }
         }
 
         private void TextBox2__KeyPress(object sender, EventArgs e)
@@ -349,6 +418,7 @@ namespace ArcherLai_UnitTest3Q1
         private void TextBox16__KeyPress(object sender, EventArgs e)
         {
             this.timer1.Start();
+            
         }
     }
 }

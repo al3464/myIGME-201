@@ -121,4 +121,52 @@
   <data name="BenjaminHarrison" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BenjaminHarrison.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JohnFKennedy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JohnFKennedy.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MartinVanBuren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MartinVanBuren.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RonaldReagan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RonaldReagan.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TheodoreRoosevelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TheodoreRoosevelt.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThomasJefferson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThomasJefferson.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WilliamJClinton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WilliamJClinton.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WilliamMcKinley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WilliamMcKinley.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwightDEisenhower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwightDEisenhower.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FranklinDRoosevelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FranklinDRoosevelt.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FranklinPierce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FranklinPierce.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeorgeWashington" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeorgeWashington.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeorgeWBush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeorgeWBush.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JamesBuchanan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JamesBuchanan.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JohnAdams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JohnAdams.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarackObama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarackObama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarackObama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarackObama1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
