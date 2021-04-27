@@ -79,17 +79,39 @@ namespace ArcherLai_UnitTest3Q1
 
         private void RepublicanButton__CheckedChanged(object sender, EventArgs e)
         {
-            radioButton1.Visible = false;
+            radioButton1.Visible = true;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = true;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = true;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
+            radioButton14.Visible = true;
+            radioButton15.Visible = true;
+            radioButton16.Visible = true;
         }
 
         private void DemocratButton__CheckedChanged(object sender, EventArgs e)
         {
             radioButton1.Visible = false;
-            radioButton5.Visible = false;
+            radioButton2.Visible = true;
+            radioButton3.Visible = true;
+            radioButton4.Visible = true;
+            radioButton5.Visible = true;
+            radioButton6.Visible = false;
+            radioButton7.Visible = true;
+            radioButton8.Visible = true;
             radioButton9.Visible = false;
             radioButton10.Visible = false;
             radioButton11.Visible = false;
-            radioButton13.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = true;
             radioButton14.Visible = false;
             radioButton15.Visible = false;
             radioButton16.Visible = false;
@@ -97,12 +119,42 @@ namespace ArcherLai_UnitTest3Q1
 
         private void DrButton__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = true;
+            radioButton10.Visible = false;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
+            radioButton14.Visible = false;
+            radioButton15.Visible = false;
+            radioButton16.Visible = false;
         }
 
         private void FederalistButton__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = false;
+            radioButton11.Visible = true;
+            radioButton12.Visible = true;
+            radioButton13.Visible = false;
+            radioButton14.Visible = false;
+            radioButton15.Visible = false;
+            radioButton16.Visible = false;
         }
 
         private void RadioButton1__CheckedChanged(object sender, EventArgs e)
@@ -113,76 +165,99 @@ namespace ArcherLai_UnitTest3Q1
         private void RadioButton2__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt";
         }
 
         private void RadioButton3__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_J_Clinton");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_J_Clinton";
         }
 
         private void RadioButton4__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/James_Buchanan");
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_J_Clinton");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_J_Clinton";
         }
 
         private void RadioButton5__CheckedChanged(object sender, EventArgs e)
+            
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_Pierce");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Franklin_Pierce";
         }
 
         private void RadioButton6__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_W_Bush");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/George_W_Bush";
+
         }
 
         private void RadioButton7__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Barack_Obama");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Barack_Obama";
+
         }
 
         private void RadioButton8__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_F_Kennedy");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/John_F_Kennedy";
         }
 
         private void RadioButton16__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_McKinley");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/William_McKinley";
         }
 
         private void RadioButton15__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Ronald_Reagan");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Ronald_Reagan";
         }
 
         private void RadioButton14__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Dwight_D_Eisenhower");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Dwight_D_Eisenhower";
         }
 
         private void RadioButton13__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Martin_VanBuren");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Martin_VanBuren";
         }
 
         private void RadioButton12__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_Washington");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/George_Washington";
         }
 
         private void RadioButton11__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_Adams");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/John_Adams";
         }
 
         private void RadioButton10__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Theodore_Roosevelt");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Theodore_Roosevelt";
         }
 
         private void RadioButton9__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Thomas_Jefferson");
+            groupBox1.Text = "https://en.m.wikipedia.org/wiki/Thomas_Jefferson";
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
