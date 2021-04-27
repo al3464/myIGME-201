@@ -45,39 +45,47 @@ namespace ArcherLai_UnitTest3Q3
         private void RadioButton1__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/us/");
+            groupBox1.Text = "Covid-19-US";
         }
 
         private void RadioButton2__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/uk/");
+            groupBox1.Text = "Covid-19-UK";
         }
 
         private void RadioButton3__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/china/");
+             groupBox1.Text = "Covid-19-China";
+            
         }
 
         private void RadioButton4__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/france/");
-
+            groupBox1.Text = "Covid-19-France";
+           
         }
 
         private void RadioButton5__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/italy/");
+            groupBox1.Text = "Covid-19-Italy";
         }
 
         private void RadioButton6__CheckedChanged(object sender, EventArgs e)
         {
             
             webBrowser1.Navigate("https://people.rit.edu/al3464/235/hello/hello.html");
-            
+            groupBox1.Text = "Covid-19-Write" + textBox1.Text;
+
         }
 
         private void SearchButton__Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/"+textBox1.Text+"/");
+            groupBox1.Text = "Covid-19-" + textBox1.Text;
         }
 
 
