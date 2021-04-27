@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Johnson_&amp;_Johnson_COVID-19_vaccine_developed_by_Janssen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-03-15T095921Z_1480341943_RC2LBM9T54M3_RTRMADP_3_HEALTH-CORONAVIRUS-MRNA-e1617398931565-1024x647.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-20201210-13-1br3gai.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
