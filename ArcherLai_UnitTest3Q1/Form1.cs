@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ArcherLai_UnitTest3Q1
 {
-    public partial class Form1 : Form
+    public partial class Presidents : Form
     {
 
-        public Form1()
+        public Presidents()
         {
             
             InitializeComponent();

@@ -1,7 +1,7 @@
 ﻿
 namespace ArcherLai_UnitTest3Q1
 {
-    partial class Form1
+    partial class Presidents
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace ArcherLai_UnitTest3Q1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Presidents));
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -64,15 +64,15 @@ namespace ArcherLai_UnitTest3Q1
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.allButton = new System.Windows.Forms.RadioButton();
-            this.democratButton = new System.Windows.Forms.RadioButton();
-            this.repulblicanButton = new System.Windows.Forms.RadioButton();
-            this.drButton = new System.Windows.Forms.RadioButton();
             this.federalistButton = new System.Windows.Forms.RadioButton();
+            this.drButton = new System.Windows.Forms.RadioButton();
+            this.repulblicanButton = new System.Windows.Forms.RadioButton();
+            this.democratButton = new System.Windows.Forms.RadioButton();
+            this.allButton = new System.Windows.Forms.RadioButton();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.exitButton = new System.Windows.Forms.Button();
@@ -418,6 +418,16 @@ namespace ArcherLai_UnitTest3Q1
             this.groupBox1.Text = "https://en.m.wikipedia.org/wiki/Benjamin_Harrison";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(3, 16);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(601, 468);
+            this.webBrowser1.TabIndex = 1;
+            this.webBrowser1.Url = new System.Uri("https://en.m.wikipedia.org/wiki/Benjamin_Harrison", System.UriKind.Absolute);
+            // 
             // vScrollBar1
             // 
             this.vScrollBar1.Location = new System.Drawing.Point(590, 0);
@@ -440,55 +450,16 @@ namespace ArcherLai_UnitTest3Q1
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter";
             // 
-            // vScrollBar2
+            // federalistButton
             // 
-            this.vScrollBar2.Location = new System.Drawing.Point(590, 0);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(17, 554);
-            this.vScrollBar2.TabIndex = 0;
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(3, 16);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(601, 468);
-            this.webBrowser1.TabIndex = 1;
-            this.webBrowser1.Url = new System.Uri("https://en.m.wikipedia.org/wiki/Benjamin_Harrison", System.UriKind.Absolute);
-            // 
-            // allButton
-            // 
-            this.allButton.AutoSize = true;
-            this.allButton.Location = new System.Drawing.Point(12, 19);
-            this.allButton.Name = "allButton";
-            this.allButton.Size = new System.Drawing.Size(36, 17);
-            this.allButton.TabIndex = 1;
-            this.allButton.TabStop = true;
-            this.allButton.Text = "All";
-            this.allButton.UseVisualStyleBackColor = true;
-            // 
-            // democratButton
-            // 
-            this.democratButton.AutoSize = true;
-            this.democratButton.Location = new System.Drawing.Point(12, 42);
-            this.democratButton.Name = "democratButton";
-            this.democratButton.Size = new System.Drawing.Size(71, 17);
-            this.democratButton.TabIndex = 2;
-            this.democratButton.TabStop = true;
-            this.democratButton.Text = "Democrat";
-            this.democratButton.UseVisualStyleBackColor = true;
-            // 
-            // repulblicanButton
-            // 
-            this.repulblicanButton.AutoSize = true;
-            this.repulblicanButton.Location = new System.Drawing.Point(12, 65);
-            this.repulblicanButton.Name = "repulblicanButton";
-            this.repulblicanButton.Size = new System.Drawing.Size(73, 17);
-            this.repulblicanButton.TabIndex = 3;
-            this.repulblicanButton.TabStop = true;
-            this.repulblicanButton.Text = "Repblican";
-            this.repulblicanButton.UseVisualStyleBackColor = true;
+            this.federalistButton.AutoSize = true;
+            this.federalistButton.Location = new System.Drawing.Point(12, 111);
+            this.federalistButton.Name = "federalistButton";
+            this.federalistButton.Size = new System.Drawing.Size(70, 17);
+            this.federalistButton.TabIndex = 5;
+            this.federalistButton.TabStop = true;
+            this.federalistButton.Text = "Federalist";
+            this.federalistButton.UseVisualStyleBackColor = true;
             // 
             // drButton
             // 
@@ -501,16 +472,45 @@ namespace ArcherLai_UnitTest3Q1
             this.drButton.Text = "Democratic-Republican";
             this.drButton.UseVisualStyleBackColor = true;
             // 
-            // federalistButton
+            // repulblicanButton
             // 
-            this.federalistButton.AutoSize = true;
-            this.federalistButton.Location = new System.Drawing.Point(12, 111);
-            this.federalistButton.Name = "federalistButton";
-            this.federalistButton.Size = new System.Drawing.Size(70, 17);
-            this.federalistButton.TabIndex = 5;
-            this.federalistButton.TabStop = true;
-            this.federalistButton.Text = "Federalist";
-            this.federalistButton.UseVisualStyleBackColor = true;
+            this.repulblicanButton.AutoSize = true;
+            this.repulblicanButton.Location = new System.Drawing.Point(12, 65);
+            this.repulblicanButton.Name = "repulblicanButton";
+            this.repulblicanButton.Size = new System.Drawing.Size(73, 17);
+            this.repulblicanButton.TabIndex = 3;
+            this.repulblicanButton.TabStop = true;
+            this.repulblicanButton.Text = "Repblican";
+            this.repulblicanButton.UseVisualStyleBackColor = true;
+            // 
+            // democratButton
+            // 
+            this.democratButton.AutoSize = true;
+            this.democratButton.Location = new System.Drawing.Point(12, 42);
+            this.democratButton.Name = "democratButton";
+            this.democratButton.Size = new System.Drawing.Size(71, 17);
+            this.democratButton.TabIndex = 2;
+            this.democratButton.TabStop = true;
+            this.democratButton.Text = "Democrat";
+            this.democratButton.UseVisualStyleBackColor = true;
+            // 
+            // allButton
+            // 
+            this.allButton.AutoSize = true;
+            this.allButton.Location = new System.Drawing.Point(12, 19);
+            this.allButton.Name = "allButton";
+            this.allButton.Size = new System.Drawing.Size(36, 17);
+            this.allButton.TabIndex = 1;
+            this.allButton.TabStop = true;
+            this.allButton.Text = "All";
+            this.allButton.UseVisualStyleBackColor = true;
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(590, 0);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(17, 554);
+            this.vScrollBar2.TabIndex = 0;
             // 
             // progressBar1
             // 
@@ -593,11 +593,12 @@ namespace ArcherLai_UnitTest3Q1
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Presidents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 584);
+            this.ControlBox = false;
             this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.exitButton);
@@ -605,8 +606,8 @@ namespace ArcherLai_UnitTest3Q1
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Presidents";
+            this.Text = "Presidents";
             this.TransparencyKey = System.Drawing.Color.Lime;
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
