@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{09C12826-746B-4205-AFE3-2F82DE4D2B92}</ProjectGuid>
+    <ProjectGuid>{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ArcherLai_UnitTest3Q3</RootNamespace>
     <AssemblyName>ArcherLai_UnitTest3Q3</AssemblyName>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

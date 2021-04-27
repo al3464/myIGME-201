@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcherLai_UnitTest3Q3", "ArcherLai_UnitTest3Q3.csproj", "{09C12826-746B-4205-AFE3-2F82DE4D2B92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcherLai_UnitTest3Q3", "ArcherLai_UnitTest3Q3.csproj", "{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{09C12826-746B-4205-AFE3-2F82DE4D2B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09C12826-746B-4205-AFE3-2F82DE4D2B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09C12826-746B-4205-AFE3-2F82DE4D2B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09C12826-746B-4205-AFE3-2F82DE4D2B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93EA6AA-2CFE-4120-9800-B2F3722A8BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {43897ED8-8A0C-450F-829F-D6E913E3A3C9}
+		SolutionGuid = {3D7DD553-ECF4-45BA-A79A-4261229664DB}
 	EndGlobalSection
 EndGlobal
