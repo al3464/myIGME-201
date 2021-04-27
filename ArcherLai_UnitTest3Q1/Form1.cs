@@ -39,13 +39,30 @@ namespace ArcherLai_UnitTest3Q1
             drButton.CheckedChanged += new EventHandler(DrButton__CheckedChanged);
             federalistButton.CheckedChanged += new EventHandler(FederalistButton__CheckedChanged);
             this.webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(WebBrowser1__DocumentCompleted);
-            
-
+            this.timer1.Tick += new EventHandler(Timer__Tick);
+            timer1.Interval = 1000;
+            textBox1.KeyPress += new KeyPressEventHandler(TextBox1__KeyPress);
+            textBox2.KeyPress += new KeyPressEventHandler(TextBox2__KeyPress);
+            textBox3.KeyPress += new KeyPressEventHandler(TextBox3__KeyPress);
+            textBox4.KeyPress += new KeyPressEventHandler(TextBox4__KeyPress);
+            textBox5.KeyPress += new KeyPressEventHandler(TextBox5__KeyPress);
+            textBox6.KeyPress += new KeyPressEventHandler(TextBox6__KeyPress);
+            textBox7.KeyPress += new KeyPressEventHandler(TextBox7__KeyPress);
+            textBox8.KeyPress += new KeyPressEventHandler(TextBox8__KeyPress);
+            textBox9.KeyPress += new KeyPressEventHandler(TextBox9__KeyPress);
+            textBox10.KeyPress += new KeyPressEventHandler(TextBox10__KeyPress);
+            textBox11.KeyPress += new KeyPressEventHandler(TextBox11__KeyPress);
+            textBox12.KeyPress += new KeyPressEventHandler(TextBox12__KeyPress);
+            textBox13.KeyPress += new KeyPressEventHandler(TextBox13__KeyPress);
+            textBox14.KeyPress += new KeyPressEventHandler(TextBox14__KeyPress);
+            textBox15.KeyPress += new KeyPressEventHandler(TextBox15__KeyPress);
+            textBox16.KeyPress += new KeyPressEventHandler(TextBox16__KeyPress);
         }
 
         private void ExitButton__Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
         }
 
         private void WebBrowser1__DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -55,9 +72,13 @@ namespace ArcherLai_UnitTest3Q1
            
         }
 
+        private void Timer__Tick(object sender, EventArgs e)
+        {
+            this.progressBar1.Increment(1);
+        }
         
 
-        private void AllButton__CheckedChanged(object sender, EventArgs e)
+            private void AllButton__CheckedChanged(object sender, EventArgs e)
         {
             radioButton1.Visible = true;
             radioButton2.Visible = true;
@@ -95,6 +116,7 @@ namespace ArcherLai_UnitTest3Q1
             radioButton14.Visible = true;
             radioButton15.Visible = true;
             radioButton16.Visible = true;
+           
         }
 
         private void DemocratButton__CheckedChanged(object sender, EventArgs e)
@@ -258,6 +280,75 @@ namespace ArcherLai_UnitTest3Q1
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void TextBox1__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+
+        private void TextBox2__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+
+        private void TextBox3__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+
+        private void TextBox4__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox5__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+
+        private void TextBox6__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox7__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox8__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox9__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox10__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox11__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox12__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox13__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox14__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox15__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+        private void TextBox16__KeyPress(object sender, EventArgs e)
+        {
+            this.timer1.Start();
         }
     }
 }
