@@ -25,6 +25,7 @@ namespace ArcherLai_UnitTest3Q3
             vaccineButton.Click += new EventHandler(VaccineButton__Click);
             exitButton.Click += new EventHandler(ExitButton__Click);
             searchButton.Click += new EventHandler(SearchButton__Click);
+            clearButton.Click += new EventHandler(ClearButton__Click);
         }
 
         
@@ -33,6 +34,10 @@ namespace ArcherLai_UnitTest3Q3
         {
             Application.Exit();
 
+        }
+        private void ClearButton__Click(object sender, EventArgs e)
+        {
+            textBox1.ResetText();
         }
         private void VaccineButton__Click(object sender, EventArgs e)
         {
