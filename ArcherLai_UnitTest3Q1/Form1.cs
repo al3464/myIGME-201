@@ -19,15 +19,6 @@ namespace ArcherLai_UnitTest3Q1
             InitializeComponent();
             this.exitButton.Click += new EventHandler(ExitButton__Click);
 
-            float pbZoom = 3f;  // the factor by which the PictureBox is zoomed in or out
-
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.ClientSize = new Size((int)(pictureBox1.Image.Width * pbZoom),
-                     (int)(pictureBox1.Image.Height * pbZoom));
-
-
-            pictureBox1.MouseMove += new MouseEventHandler(PictureBox1_MouseMove);
-
             radioButton1.CheckedChanged += new EventHandler(RadioButton1__CheckedChanged);
             radioButton2.CheckedChanged += new EventHandler(RadioButton2__CheckedChanged);
             radioButton3.CheckedChanged += new EventHandler(RadioButton3__CheckedChanged);
@@ -83,6 +74,7 @@ namespace ArcherLai_UnitTest3Q1
             Application.Exit();
             
         }
+
         Bitmap img1 = Properties.Resources.BenjaminHarrison;
         Bitmap img2 = Properties.Resources.FranklinDRoosevelt;
         Bitmap img3 = Properties.Resources.WilliamJClinton;
@@ -113,7 +105,7 @@ namespace ArcherLai_UnitTest3Q1
             this.progressBar1.Increment(1);
         }
 
-        private void PictureBox1_MouseMove()
+        private void PictureBox1__MouseMove()
         {
 
         }
