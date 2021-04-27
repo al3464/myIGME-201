@@ -25,7 +25,7 @@ namespace ArcherLai_UnitTest3Q3
         }
         private void RadioButton1__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("");
+            webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/us/");
         }
 
         private void RadioButton2__CheckedChanged(object sender, EventArgs e)
@@ -35,29 +35,26 @@ namespace ArcherLai_UnitTest3Q3
 
         private void RadioButton3__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("");
+            webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/china/");
         }
 
         private void RadioButton4__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("");
+            webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/france/");
 
         }
 
         private void RadioButton5__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("");
+            webBrowser1.Navigate("https://www.worldometers.info/coronavirus/country/italy/");
         }
 
         private void RadioButton6__CheckedChanged(object sender, EventArgs e)
         {
-
+            webBrowser1.Navigate("https://people.rit.edu/al3464/235/hello/hello.html");
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
 
     }
 }

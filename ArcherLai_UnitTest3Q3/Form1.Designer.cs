@@ -38,7 +38,6 @@ namespace ArcherLai_UnitTest3Q3
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +110,6 @@ namespace ArcherLai_UnitTest3Q3
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.vScrollBar1);
             this.groupBox1.Controls.Add(this.webBrowser1);
             this.groupBox1.Location = new System.Drawing.Point(384, 26);
             this.groupBox1.Name = "groupBox1";
@@ -137,13 +135,6 @@ namespace ArcherLai_UnitTest3Q3
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(387, 340);
             this.webBrowser1.TabIndex = 0;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(354, 16);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 340);
-            this.vScrollBar1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -175,7 +166,6 @@ namespace ArcherLai_UnitTest3Q3
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
     }
