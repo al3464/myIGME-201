@@ -16,13 +16,30 @@ namespace ArcherLai_UnitTest3Q1
         {
             InitializeComponent();
             this.exitButton.Click += new EventHandler(ExitButton__Click);
+            radioButton1.CheckedChanged += new EventHandler(RadioButton1__CheckedChanged);
             radioButton2.CheckedChanged += new EventHandler(RadioButton2__CheckedChanged);
+            radioButton3.CheckedChanged += new EventHandler(RadioButton3__CheckedChanged);
+            radioButton4.CheckedChanged += new EventHandler(RadioButton4__CheckedChanged);
+            radioButton5.CheckedChanged += new EventHandler(RadioButton5__CheckedChanged);
+            radioButton6.CheckedChanged += new EventHandler(RadioButton6__CheckedChanged);
+            radioButton7.CheckedChanged += new EventHandler(RadioButton7__CheckedChanged);
+            radioButton8.CheckedChanged += new EventHandler(RadioButton8__CheckedChanged);
+            radioButton9.CheckedChanged += new EventHandler(RadioButton9__CheckedChanged);
+            radioButton10.CheckedChanged += new EventHandler(RadioButton10__CheckedChanged);
+            radioButton11.CheckedChanged += new EventHandler(RadioButton11__CheckedChanged);
+            radioButton12.CheckedChanged += new EventHandler(RadioButton12__CheckedChanged);
+            radioButton13.CheckedChanged += new EventHandler(RadioButton13__CheckedChanged);
+            radioButton14.CheckedChanged += new EventHandler(RadioButton14__CheckedChanged);
+            radioButton15.CheckedChanged += new EventHandler(RadioButton15__CheckedChanged);
+            radioButton16.CheckedChanged += new EventHandler(RadioButton16__CheckedChanged);
+
             allButton.CheckedChanged += new EventHandler(AllButton__CheckedChanged);
             repulblicanButton.CheckedChanged += new EventHandler(RepublicanButton__CheckedChanged);
             democratButton.CheckedChanged += new EventHandler(DemocratButton__CheckedChanged);
             drButton.CheckedChanged += new EventHandler(DrButton__CheckedChanged);
             federalistButton.CheckedChanged += new EventHandler(FederalistButton__CheckedChanged);
             this.webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(WebBrowser1__DocumentCompleted);
+            
 
         }
 
@@ -38,14 +55,26 @@ namespace ArcherLai_UnitTest3Q1
            
         }
 
-        private void RadioButton2__CheckedChanged(object sender, EventArgs e)
-        {
-            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
-        }
+        
 
         private void AllButton__CheckedChanged(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+            radioButton1.Visible = true;
+            radioButton2.Visible = true;
+            radioButton3.Visible = true;
+            radioButton4.Visible = true;
+            radioButton5.Visible = true;
+            radioButton6.Visible = true;
+            radioButton7.Visible = true;
+            radioButton8.Visible = true;
+            radioButton9.Visible = true;
+            radioButton10.Visible = true;
+            radioButton11.Visible = true;
+            radioButton12.Visible = true;
+            radioButton13.Visible = true;
+            radioButton14.Visible = true;
+            radioButton15.Visible = true;
+            radioButton16.Visible = true;
         }
 
         private void RepublicanButton__CheckedChanged(object sender, EventArgs e)
@@ -74,6 +103,86 @@ namespace ArcherLai_UnitTest3Q1
         private void FederalistButton__CheckedChanged(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+        }
+
+        private void RadioButton1__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Benjamin_Harrison");
+        }
+
+        private void RadioButton2__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_D_Roosevelt");
+        }
+
+        private void RadioButton3__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_J_Clinton");
+        }
+
+        private void RadioButton4__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/James_Buchanan");
+        }
+
+        private void RadioButton5__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Franklin_Pierce");
+        }
+
+        private void RadioButton6__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_W_Bush");
+        }
+
+        private void RadioButton7__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Barack_Obama");
+        }
+
+        private void RadioButton8__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_F_Kennedy");
+        }
+
+        private void RadioButton16__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/William_McKinley");
+        }
+
+        private void RadioButton15__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Ronald_Reagan");
+        }
+
+        private void RadioButton14__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Dwight_D_Eisenhower");
+        }
+
+        private void RadioButton13__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Martin_VanBuren");
+        }
+
+        private void RadioButton12__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/George_Washington");
+        }
+
+        private void RadioButton11__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/John_Adams");
+        }
+
+        private void RadioButton10__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Theodore_Roosevelt");
+        }
+
+        private void RadioButton9__CheckedChanged(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://en.m.wikipedia.org/wiki/Thomas_Jefferson");
         }
     }
 }

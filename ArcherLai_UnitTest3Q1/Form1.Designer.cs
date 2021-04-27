@@ -78,15 +78,17 @@ namespace ArcherLai_UnitTest3Q1
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.exitButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 15);
+            this.radioButton1.Location = new System.Drawing.Point(8, 12);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(110, 17);
             this.radioButton1.TabIndex = 0;
@@ -97,7 +99,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(12, 40);
+            this.radioButton2.Location = new System.Drawing.Point(8, 37);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(124, 17);
             this.radioButton2.TabIndex = 1;
@@ -108,7 +110,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(12, 65);
+            this.radioButton3.Location = new System.Drawing.Point(8, 62);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(101, 17);
             this.radioButton3.TabIndex = 2;
@@ -119,7 +121,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(12, 90);
+            this.radioButton4.Location = new System.Drawing.Point(8, 87);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(107, 17);
             this.radioButton4.TabIndex = 3;
@@ -130,7 +132,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(13, 115);
+            this.radioButton5.Location = new System.Drawing.Point(9, 112);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(95, 17);
             this.radioButton5.TabIndex = 4;
@@ -141,7 +143,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(13, 140);
+            this.radioButton6.Location = new System.Drawing.Point(9, 137);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(101, 17);
             this.radioButton6.TabIndex = 5;
@@ -152,7 +154,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(13, 165);
+            this.radioButton7.Location = new System.Drawing.Point(9, 162);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(96, 17);
             this.radioButton7.TabIndex = 6;
@@ -163,7 +165,7 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(12, 190);
+            this.radioButton8.Location = new System.Drawing.Point(8, 187);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(102, 17);
             this.radioButton8.TabIndex = 7;
@@ -174,7 +176,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(137, 12);
+            this.textBox1.Location = new System.Drawing.Point(133, 9);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(27, 20);
             this.textBox1.TabIndex = 8;
@@ -183,7 +185,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(137, 37);
+            this.textBox2.Location = new System.Drawing.Point(133, 34);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(27, 20);
             this.textBox2.TabIndex = 9;
@@ -192,7 +194,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(137, 62);
+            this.textBox3.Location = new System.Drawing.Point(133, 59);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(27, 20);
             this.textBox3.TabIndex = 10;
@@ -201,7 +203,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(137, 87);
+            this.textBox4.Location = new System.Drawing.Point(133, 84);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(27, 20);
             this.textBox4.TabIndex = 11;
@@ -210,7 +212,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(137, 112);
+            this.textBox5.Location = new System.Drawing.Point(133, 109);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(27, 20);
             this.textBox5.TabIndex = 12;
@@ -219,7 +221,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(137, 138);
+            this.textBox6.Location = new System.Drawing.Point(133, 135);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(27, 20);
             this.textBox6.TabIndex = 13;
@@ -228,7 +230,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(137, 162);
+            this.textBox7.Location = new System.Drawing.Point(133, 159);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(27, 20);
             this.textBox7.TabIndex = 14;
@@ -237,7 +239,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(137, 187);
+            this.textBox8.Location = new System.Drawing.Point(133, 184);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(27, 20);
             this.textBox8.TabIndex = 15;
@@ -246,95 +248,95 @@ namespace ArcherLai_UnitTest3Q1
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(170, 190);
+            this.radioButton9.Location = new System.Drawing.Point(166, 187);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(102, 17);
+            this.radioButton9.Size = new System.Drawing.Size(109, 17);
             this.radioButton9.TabIndex = 23;
             this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "John F Kennedy";
+            this.radioButton9.Text = "Thomas Jefferson";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(171, 165);
+            this.radioButton10.Location = new System.Drawing.Point(167, 162);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(96, 17);
+            this.radioButton10.Size = new System.Drawing.Size(122, 17);
             this.radioButton10.TabIndex = 22;
             this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Barack Obama";
+            this.radioButton10.Text = "Theodore Roosevelt";
             this.radioButton10.UseVisualStyleBackColor = true;
             // 
             // radioButton11
             // 
             this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(171, 140);
+            this.radioButton11.Location = new System.Drawing.Point(167, 137);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(101, 17);
+            this.radioButton11.Size = new System.Drawing.Size(83, 17);
             this.radioButton11.TabIndex = 21;
             this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "George W Bush";
+            this.radioButton11.Text = "John Adams";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
             // radioButton12
             // 
             this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(171, 115);
+            this.radioButton12.Location = new System.Drawing.Point(167, 112);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(95, 17);
+            this.radioButton12.Size = new System.Drawing.Size(120, 17);
             this.radioButton12.TabIndex = 20;
             this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Franklin Pierce";
+            this.radioButton12.Text = "George Washington";
             this.radioButton12.UseVisualStyleBackColor = true;
             // 
             // radioButton13
             // 
             this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(170, 90);
+            this.radioButton13.Location = new System.Drawing.Point(166, 87);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(107, 17);
+            this.radioButton13.Size = new System.Drawing.Size(104, 17);
             this.radioButton13.TabIndex = 19;
             this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "James Buchanan";
+            this.radioButton13.Text = "Martin VanBuren";
             this.radioButton13.UseVisualStyleBackColor = true;
             // 
             // radioButton14
             // 
             this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(170, 65);
+            this.radioButton14.Location = new System.Drawing.Point(166, 62);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(101, 17);
+            this.radioButton14.Size = new System.Drawing.Size(127, 17);
             this.radioButton14.TabIndex = 18;
             this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "William J Clinton";
+            this.radioButton14.Text = "Dwight D Eisenhower";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
             // radioButton15
             // 
             this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(170, 40);
+            this.radioButton15.Location = new System.Drawing.Point(166, 37);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(124, 17);
+            this.radioButton15.Size = new System.Drawing.Size(100, 17);
             this.radioButton15.TabIndex = 17;
             this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Franklin D Roosevelt";
+            this.radioButton15.Text = "Ronald Reagan";
             this.radioButton15.UseVisualStyleBackColor = true;
             // 
             // radioButton16
             // 
             this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(170, 15);
+            this.radioButton16.Location = new System.Drawing.Point(166, 12);
             this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(110, 17);
+            this.radioButton16.Size = new System.Drawing.Size(104, 17);
             this.radioButton16.TabIndex = 16;
             this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "Benjamin Harrison";
+            this.radioButton16.Text = "William McKinley";
             this.radioButton16.UseVisualStyleBackColor = true;
             // 
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(298, 187);
+            this.textBox9.Location = new System.Drawing.Point(294, 184);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(27, 20);
             this.textBox9.TabIndex = 31;
@@ -343,7 +345,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(298, 162);
+            this.textBox10.Location = new System.Drawing.Point(294, 159);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(27, 20);
             this.textBox10.TabIndex = 30;
@@ -352,7 +354,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(298, 138);
+            this.textBox11.Location = new System.Drawing.Point(294, 135);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(27, 20);
             this.textBox11.TabIndex = 29;
@@ -361,7 +363,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.Location = new System.Drawing.Point(298, 112);
+            this.textBox12.Location = new System.Drawing.Point(294, 109);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(27, 20);
             this.textBox12.TabIndex = 28;
@@ -370,7 +372,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(298, 87);
+            this.textBox13.Location = new System.Drawing.Point(294, 84);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(27, 20);
             this.textBox13.TabIndex = 27;
@@ -379,7 +381,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(298, 62);
+            this.textBox14.Location = new System.Drawing.Point(294, 59);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(27, 20);
             this.textBox14.TabIndex = 26;
@@ -388,7 +390,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox15
             // 
             this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.Location = new System.Drawing.Point(298, 37);
+            this.textBox15.Location = new System.Drawing.Point(294, 34);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(27, 20);
             this.textBox15.TabIndex = 25;
@@ -397,7 +399,7 @@ namespace ArcherLai_UnitTest3Q1
             // textBox16
             // 
             this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.Location = new System.Drawing.Point(298, 12);
+            this.textBox16.Location = new System.Drawing.Point(294, 9);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(27, 20);
             this.textBox16.TabIndex = 24;
@@ -520,9 +522,9 @@ namespace ArcherLai_UnitTest3Q1
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(-6, 569);
+            this.progressBar1.Location = new System.Drawing.Point(-5, 570);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(977, 23);
+            this.progressBar1.Size = new System.Drawing.Size(647, 23);
             this.progressBar1.TabIndex = 35;
             // 
             // exitButton
@@ -541,56 +543,65 @@ namespace ArcherLai_UnitTest3Q1
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Controls.Add(this.radioButton5);
+            this.panel1.Controls.Add(this.radioButton6);
+            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.radioButton7);
+            this.panel1.Controls.Add(this.textBox10);
+            this.panel1.Controls.Add(this.radioButton8);
+            this.panel1.Controls.Add(this.textBox11);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBox12);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox14);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox15);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox16);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.radioButton9);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.radioButton10);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.radioButton11);
+            this.panel1.Controls.Add(this.radioButton16);
+            this.panel1.Controls.Add(this.radioButton12);
+            this.panel1.Controls.Add(this.radioButton15);
+            this.panel1.Controls.Add(this.radioButton13);
+            this.panel1.Controls.Add(this.radioButton14);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(331, 214);
+            this.panel1.TabIndex = 37;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 584);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.radioButton10);
-            this.Controls.Add(this.radioButton11);
-            this.Controls.Add(this.radioButton12);
-            this.Controls.Add(this.radioButton13);
-            this.Controls.Add(this.radioButton14);
-            this.Controls.Add(this.radioButton15);
-            this.Controls.Add(this.radioButton16);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -643,6 +654,7 @@ namespace ArcherLai_UnitTest3Q1
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
