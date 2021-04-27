@@ -29,6 +29,7 @@ namespace ArcherLai_UnitTest3Q3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -36,15 +37,19 @@ namespace ArcherLai_UnitTest3Q3
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.vaccineButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.searchButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(34, 26);
+            this.radioButton1.Location = new System.Drawing.Point(231, 42);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(89, 17);
             this.radioButton1.TabIndex = 0;
@@ -55,7 +60,7 @@ namespace ArcherLai_UnitTest3Q3
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(34, 58);
+            this.radioButton2.Location = new System.Drawing.Point(231, 74);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(100, 17);
             this.radioButton2.TabIndex = 1;
@@ -66,7 +71,7 @@ namespace ArcherLai_UnitTest3Q3
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(34, 93);
+            this.radioButton3.Location = new System.Drawing.Point(231, 109);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(52, 17);
             this.radioButton3.TabIndex = 2;
@@ -77,7 +82,7 @@ namespace ArcherLai_UnitTest3Q3
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(34, 126);
+            this.radioButton4.Location = new System.Drawing.Point(231, 142);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(58, 17);
             this.radioButton4.TabIndex = 3;
@@ -88,7 +93,7 @@ namespace ArcherLai_UnitTest3Q3
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(34, 159);
+            this.radioButton5.Location = new System.Drawing.Point(231, 175);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(44, 17);
             this.radioButton5.TabIndex = 4;
@@ -100,12 +105,12 @@ namespace ArcherLai_UnitTest3Q3
             // 
             this.radioButton6.AutoEllipsis = true;
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(34, 191);
+            this.radioButton6.Location = new System.Drawing.Point(231, 207);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(56, 17);
+            this.radioButton6.Size = new System.Drawing.Size(59, 17);
             this.radioButton6.TabIndex = 5;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Others";
+            this.radioButton6.Text = "Others:";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -116,16 +121,16 @@ namespace ArcherLai_UnitTest3Q3
             this.groupBox1.Size = new System.Drawing.Size(393, 359);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Covid-19-US";
             // 
-            // button1
+            // exitButton
             // 
-            this.button1.Location = new System.Drawing.Point(679, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 37);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(679, 401);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(98, 37);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
             // webBrowser1
             // 
@@ -136,12 +141,40 @@ namespace ArcherLai_UnitTest3Q3
             this.webBrowser1.Size = new System.Drawing.Size(387, 340);
             this.webBrowser1.TabIndex = 0;
             // 
+            // vaccineButton
+            // 
+            this.vaccineButton.Location = new System.Drawing.Point(544, 401);
+            this.vaccineButton.Name = "vaccineButton";
+            this.vaccineButton.Size = new System.Drawing.Size(98, 37);
+            this.vaccineButton.TabIndex = 8;
+            this.vaccineButton.Text = "Vaccinations";
+            this.vaccineButton.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(289, 206);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(75, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(298, 232);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(56, 23);
+            this.searchButton.TabIndex = 10;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.vaccineButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton5);
@@ -167,7 +200,11 @@ namespace ArcherLai_UnitTest3Q3
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button vaccineButton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 
