@@ -37,15 +37,19 @@ namespace ArcherLai_UnitTest3Q3
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.exitButton = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.exitButton = new System.Windows.Forms.Button();
             this.vaccineButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.searchButton = new System.Windows.Forms.Button();
             this.listenerButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fontsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -105,7 +109,6 @@ namespace ArcherLai_UnitTest3Q3
             // 
             // radioButton6
             // 
-            this.radioButton6.AutoEllipsis = true;
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(231, 207);
             this.radioButton6.Name = "radioButton6";
@@ -125,15 +128,6 @@ namespace ArcherLai_UnitTest3Q3
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Covid-19-US";
             // 
-            // exitButton
-            // 
-            this.exitButton.Location = new System.Drawing.Point(679, 401);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(98, 37);
-            this.exitButton.TabIndex = 7;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -142,6 +136,15 @@ namespace ArcherLai_UnitTest3Q3
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(387, 340);
             this.webBrowser1.TabIndex = 0;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(679, 401);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(98, 37);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
             // vaccineButton
             // 
@@ -186,11 +189,37 @@ namespace ArcherLai_UnitTest3Q3
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.TabIndex = 13;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fontsToolStripMenuItem
+            // 
+            this.fontsToolStripMenuItem.Name = "fontsToolStripMenuItem";
+            this.fontsToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
+            this.fontsToolStripMenuItem.Text = "Fonts";
+            // 
+            // colorButton
+            // 
+            this.colorButton.Location = new System.Drawing.Point(21, 51);
+            this.colorButton.Name = "colorButton";
+            this.colorButton.Size = new System.Drawing.Size(56, 54);
+            this.colorButton.TabIndex = 14;
+            this.colorButton.Text = "changeColor";
+            this.colorButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.colorButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.listenerButton);
             this.Controls.Add(this.searchButton);
@@ -204,9 +233,13 @@ namespace ArcherLai_UnitTest3Q3
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,6 +262,9 @@ namespace ArcherLai_UnitTest3Q3
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button listenerButton;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fontsToolStripMenuItem;
+        private System.Windows.Forms.Button colorButton;
     }
 }
 

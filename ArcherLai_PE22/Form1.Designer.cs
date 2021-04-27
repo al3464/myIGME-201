@@ -52,14 +52,14 @@ namespace ArcherLai_PE21
             this.mSSansSerifToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timesNewRomanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.boldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.italicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.underlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -267,6 +267,38 @@ namespace ArcherLai_PE21
             this.richTextBox.Size = new System.Drawing.Size(800, 396);
             this.richTextBox.TabIndex = 0;
             this.richTextBox.Text = "";
+            this.richTextBox.TextChanged += new System.EventHandler(this.richTextBox_TextChanged);
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.boldToolStripMenuItem,
+            this.italicsToolStripMenuItem,
+            this.underlineToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip";
+            this.contextMenuStrip.Size = new System.Drawing.Size(133, 70);
+            // 
+            // boldToolStripMenuItem
+            // 
+            this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
+            this.boldToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.boldToolStripMenuItem.Text = "&Bold";
+            this.boldToolStripMenuItem.ToolTipText = "Bold Selected Text";
+            this.boldToolStripMenuItem.Click += new System.EventHandler(this.bolsToolStripMenuItem_Click);
+            // 
+            // italicsToolStripMenuItem
+            // 
+            this.italicsToolStripMenuItem.Name = "italicsToolStripMenuItem";
+            this.italicsToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.italicsToolStripMenuItem.Text = "&Italics";
+            this.italicsToolStripMenuItem.ToolTipText = "Italicize Selected Text";
+            // 
+            // underlineToolStripMenuItem
+            // 
+            this.underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
+            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.underlineToolStripMenuItem.Text = "&Underline";
+            this.underlineToolStripMenuItem.ToolTipText = "Underline Selected Text";
             // 
             // openFileDialog
             // 
@@ -277,37 +309,6 @@ namespace ArcherLai_PE21
             // 
             this.saveFileDialog.DefaultExt = "rtf";
             this.saveFileDialog.Filter = "Rich Text Files|*.rtf|Plain Text Files|*.txt|All Files|*.*";
-            // 
-            // contextMenuStrip
-            // 
-            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.boldToolStripMenuItem,
-            this.italicsToolStripMenuItem,
-            this.underlineToolStripMenuItem});
-            this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(181, 92);
-            // 
-            // boldToolStripMenuItem
-            // 
-            this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.boldToolStripMenuItem.Text = "&Bold";
-            this.boldToolStripMenuItem.ToolTipText = "Bold Selected Text";
-            this.boldToolStripMenuItem.Click += new System.EventHandler(this.bolsToolStripMenuItem_Click);
-            // 
-            // italicsToolStripMenuItem
-            // 
-            this.italicsToolStripMenuItem.Name = "italicsToolStripMenuItem";
-            this.italicsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.italicsToolStripMenuItem.Text = "&Italics";
-            this.italicsToolStripMenuItem.ToolTipText = "Italicize Selected Text";
-            // 
-            // underlineToolStripMenuItem
-            // 
-            this.underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
-            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.underlineToolStripMenuItem.Text = "&Underline";
-            this.underlineToolStripMenuItem.ToolTipText = "Underline Selected Text";
             // 
             // Form1
             // 

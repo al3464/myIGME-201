@@ -236,5 +236,10 @@ namespace ArcherLai_PE21
         {
 
         }
+
+        private void richTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

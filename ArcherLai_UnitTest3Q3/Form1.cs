@@ -27,10 +27,17 @@ namespace ArcherLai_UnitTest3Q3
             searchButton.Click += new EventHandler(SearchButton__Click);
             clearButton.Click += new EventHandler(ClearButton__Click);
             listenerButton.Click += new EventHandler(ListenerButton__Click);
+            colorButton.Click += new EventHandler(ColorButton__Click);
         }
 
-        
 
+
+        private int c = 100;
+        private void ColorButton__Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(c, 255 - c, c);
+            c = (c + 1) % 256;
+        }
         private void ExitButton__Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -103,6 +110,9 @@ namespace ArcherLai_UnitTest3Q3
             groupBox1.Text = "Covid-19-" + textBox1.Text;
         }
 
+        private void backgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
