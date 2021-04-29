@@ -51,6 +51,11 @@ namespace ArcherLai_PE21
             richTextBox.SelectionFont = newFont;
         }
 
+        private int c = 0;
+
+       
+
+
         private void TimesNewRomanToolStripMenuItem__Click(object sender, EventArgs e)
         {
             Font newFont = new Font("Times New Roman", richTextBox.SelectionFont.Size, richTextBox.SelectionFont.Style);
