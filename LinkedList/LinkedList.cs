@@ -225,14 +225,19 @@ namespace LinkedList
 
         private void Button3__Click(object sender, EventArgs e)
         {
-            // 1. create a LinkedList which contains the words
+            //1. create a LinkedList which contains the words
             // "the", "fox", "jumped", "over", "the", "dog"
             // LinkedList<object> linkedList = null;
             LinkedList<object> linkedList = new LinkedList<object>();
-            LinkedListNode<object> linkedListNode;
+            //LinkedListNode<object> linkedListNode;
             // string[] sentence = null;
 
             // 2. Your code here
+            for (int i = 1; i <= 10; ++i)
+            {
+                linkedList.AddLast(i);
+            }
+  
             string[] words =
             { "the", "fox", "jumped", "over", "the", "dog" };
             LinkedList<object> sentence = new LinkedList<object>(words);
@@ -258,7 +263,45 @@ namespace LinkedList
                 sentence.AddAfter(target, "lazy");
             }
             // 7. then call the visualizer
-            VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(linkedList);
+            VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(sentence);
+
+
+
+
+            /* // 1. create a LinkedList which contains the digits 1 through 10
+            LinkedList<object> linkedList = new LinkedList<object>();
+
+            // 2. Your code here
+            for (int i = 1; i <= 10; ++i)
+            {
+                linkedList.AddLast(i);
+            }
+
+            string[] words =
+               { "the", "fox", "jumped", "over","the", "dog"};
+            LinkedList<object> sentence = new LinkedList<object>(words);
+
+            //sentence.AddLast("today");
+
+
+            LinkedListNode<Object> target = sentence.FindLast("the");
+            if (target == null)
+            {
+                // "the" is not found
+            }
+            else
+            {
+                // Add 'bright' and 'red' after 'the' (the LinkedListNode named target).        
+                sentence.AddAfter(target, "red");
+                sentence.AddAfter(target, "bright");
+            }
+
+            target = sentence.Find("fox");
+            sentence.AddBefore(target, "quick");
+
+
+            // 3. then call the visualizer
+            VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(sentence); */
         }
 
         private void Button4__Click(object sender, EventArgs e)
