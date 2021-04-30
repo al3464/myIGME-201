@@ -227,20 +227,36 @@ namespace LinkedList
         {
             // 1. create a LinkedList which contains the words
             // "the", "fox", "jumped", "over", "the", "dog"
-            LinkedList<object> linkedList = null;
+            // LinkedList<object> linkedList = null;
+            LinkedList<object> linkedList = new LinkedList<object>();
             LinkedListNode<object> linkedListNode;
-            string[] sentence = null;
+            // string[] sentence = null;
 
             // 2. Your code here
- 
+            string[] words =
+            { "the", "fox", "jumped", "over", "the", "dog" };
+            LinkedList<object> sentence = new LinkedList<object>(words);
+
             // 3. add "quick" and "brown" before "fox"
 
             // 4. Your code here
+            LinkedListNode<object> target = sentence.Find("fox");
+            sentence.AddBefore(target, "sporty");
+            sentence.AddBefore(target, "red");
 
             // 5. using example #8, add "lazy" after the last "the"
 
             // 6. Your code here
-
+            target = sentence.FindLast("the");
+            if (target == null)
+            {
+                // "the" is not found
+            }
+            else
+            {
+                // Add 'bright' and 'red' after 'the' (the LinkedListNode named target).
+                sentence.AddAfter(target, "lazy");
+            }
             // 7. then call the visualizer
             VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(linkedList);
         }
