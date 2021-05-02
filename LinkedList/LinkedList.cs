@@ -279,7 +279,7 @@ namespace LinkedList
             // 2. Your code here
             string[] s = {"Because", "I'm","sad","Clap","along","if","you", "feel","like","sadness","is","the truth sad","\n","Because", "I'm","sad","Clap","along","if","you", "feel","like","a","room", "without a roof" };
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < 25; i++)
             {
                 linkedList.AddLast(i);
             }
@@ -304,13 +304,15 @@ namespace LinkedList
         {
             // 1. create a LinkedList which contains the following words
             // The Spain in rain falls plain on the mainly
-            LinkedList<object> linkedList = null;
+            //LinkedList<object> linkedList = null;
+            
             LinkedListNode<object> linkedListNode1;
             LinkedListNode<object> linkedListNode2;
-            string[] s = null;
+            //string[] s = null;
 
             // 2. Your code here
-
+            LinkedList<object> linkedList = new LinkedList<object>();
+            string[] s = { "The", "Spain", "in", "rain", "falls", "plain", "on", "the", "mainly"};
 
             // 3. manipulate the list using Find(), Remove(), AddBefore() and/or AddAfter() to result in
             // "The rain in Spain falls mainly on the plain"
@@ -318,8 +320,10 @@ namespace LinkedList
             // you may not use string arguments in your Add method calls
 
             // 4. Your code here
-
-
+            LinkedList<object> sentence = new LinkedList<object>(s);
+            LinkedListNode<object> target = sentence.Find("rain");
+            sentence.AddAfter(target, "pretty");
+            sentence.Remove("plain");
             // 5. then call the visualizer
             VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(linkedList);
         }
