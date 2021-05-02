@@ -264,44 +264,6 @@ namespace LinkedList
             }
             // 7. then call the visualizer
             VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(sentence);
-
-
-
-
-            /* // 1. create a LinkedList which contains the digits 1 through 10
-            LinkedList<object> linkedList = new LinkedList<object>();
-
-            // 2. Your code here
-            for (int i = 1; i <= 10; ++i)
-            {
-                linkedList.AddLast(i);
-            }
-
-            string[] words =
-               { "the", "fox", "jumped", "over","the", "dog"};
-            LinkedList<object> sentence = new LinkedList<object>(words);
-
-            //sentence.AddLast("today");
-
-
-            LinkedListNode<Object> target = sentence.FindLast("the");
-            if (target == null)
-            {
-                // "the" is not found
-            }
-            else
-            {
-                // Add 'bright' and 'red' after 'the' (the LinkedListNode named target).        
-                sentence.AddAfter(target, "red");
-                sentence.AddAfter(target, "bright");
-            }
-
-            target = sentence.Find("fox");
-            sentence.AddBefore(target, "quick");
-
-
-            // 3. then call the visualizer
-            VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(sentence); */
         }
 
         private void Button4__Click(object sender, EventArgs e)
@@ -314,8 +276,20 @@ namespace LinkedList
             string[] s = null;
 
             // 2. Your code here
+            string[] words =
+            { "Because", "I'm","sad","Clap","along","if","you", "feel","like","a","room","without a roof" };
+            LinkedList<object> sentence = new LinkedList<object>(words);
 
 
+
+            for (int i = 0; i < 12; i++)
+            {
+                linkedList.AddLast(i);
+            }
+            string[] words2 =
+            {
+                "Because", "I'm","sad","Clap","along","if","you", "feel","like","sadness","is","the truth sad"
+            };
             // 3. replace "sad" with "happy"
             // and "sadness with "happiness"
             // note that because Value is an object 
@@ -323,7 +297,8 @@ namespace LinkedList
             //     if( (string)linkedListNode.Value == "sad"
 
             // 4. Your code here
-
+            LinkedListNode<object> target = sentence.Find("sad");
+            target.Value = "happy";
 
             // 5. then call the visualizer
             VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(linkedList);
