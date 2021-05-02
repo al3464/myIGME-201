@@ -38,6 +38,7 @@ namespace LinkedList
             button4.Click += new EventHandler(Button4__Click);
             button5.Click += new EventHandler(Button5__Click);
             button6.Click += new EventHandler(Button6__Click);
+            
         }
 
         /* Linked List Examples        
@@ -271,34 +272,29 @@ namespace LinkedList
             // 1. create a LinkedList which contains the words
             // Because I'm sad Clap along if you feel like a room without a roof
             // Because I'm sad Clap along if you feel like sadness is the truth sad
-            LinkedList<object> linkedList = null;
+            //LinkedList<object> linkedList = null;
+            LinkedList<object> linkedList = new LinkedList<object>();
             LinkedListNode<object> linkedListNode;
-            string[] s = null;
-
+            //string[] s = null;
             // 2. Your code here
-            string[] words =
-            { "Because", "I'm","sad","Clap","along","if","you", "feel","like","a","room","without a roof" };
-            LinkedList<object> sentence = new LinkedList<object>(words);
-
-
+            string[] s = {"Because", "I'm","sad","Clap","along","if","you", "feel","like","sadness","is","the truth sad","\n","Because", "I'm","sad","Clap","along","if","you", "feel","like","a","room", "without a roof" };
 
             for (int i = 0; i < 12; i++)
             {
                 linkedList.AddLast(i);
             }
-            string[] words2 =
-            {
-                "Because", "I'm","sad","Clap","along","if","you", "feel","like","sadness","is","the truth sad"
-            };
+
             // 3. replace "sad" with "happy"
             // and "sadness with "happiness"
             // note that because Value is an object 
             // you will have to cast Value as a string as follows:
             //     if( (string)linkedListNode.Value == "sad"
-
+            LinkedList<object> sentence = new LinkedList<object>(s);
             // 4. Your code here
-            LinkedListNode<object> target = sentence.Find("sad");
-            target.Value = "happy";
+            LinkedListNode<object> target1 = sentence.Find("sad");
+            target1.Value = "happy";
+            LinkedListNode<object> target2 = sentence.Find("sadness");
+            target2.Value = "happiness";
 
             // 5. then call the visualizer
             VisualizeLinkedList visualizeLinkedList = new VisualizeLinkedList(linkedList);
