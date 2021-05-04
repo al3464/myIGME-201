@@ -167,10 +167,10 @@ namespace BTree
             this.richTextBox.Clear();
 
             // Your code here
-        
+   
             for (int i = 0; i < 30; i++) {
 
-                node = new BTree(random.Next(51), root);
+                node = new BTree(random.Next(1, 51), root);
                 if (i == 0)
                 {
                     root = node;
@@ -201,11 +201,16 @@ namespace BTree
 
 
             // Your code here
-
+            
 
             for (int i = 0; i < 30; ++i)
             {
                 node = new BTree(random.Next(1, 52), root);
+
+                if (i == 0)
+                {
+                    root = node;
+                }
             }
 
             this.richTextBox.Text += "\n";
@@ -227,7 +232,17 @@ namespace BTree
             this.richTextBox.Clear();
 
             // Your code here
+            string[] uppercase = { "A", "B", "C", "D", "E", "F", "G", "H", "I","J","K","L","M","N","O" };
+            
 
+            for (int i = 0; i < 15; ++i)
+            {
+                node = new BTree(random.Next(1, 52), root);
+                if (i == 0)
+                {
+                    root = node;
+                }
+            }
 
             this.richTextBox.Text += "\n";
 
