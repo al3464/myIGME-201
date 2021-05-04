@@ -233,16 +233,23 @@ namespace BTree
 
             // Your code here
             string[] uppercase = { "A", "B", "C", "D", "E", "F", "G", "H", "I","J","K","L","M","N","O" };
-            
+            node = new BTree(uppercase[random.Next(0, 15)], null);
+            root = node;
 
-            for (int i = 0; i < 15; ++i)
-            {
-                node = new BTree(random.Next(1, 52), root);
-                if (i == 0)
-                {
-                    root = node;
-                }
-            }
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
 
             this.richTextBox.Text += "\n";
 
@@ -261,9 +268,26 @@ namespace BTree
 
             BTree node = null;
             BTree root = null;
-
+            Random random = new Random();
             // Your code here
+            string[] uppercase = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O" };
+            node = new BTree(uppercase[random.Next(0, 15)], null);
+            root = node;
 
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
+            node = new BTree(uppercase[random.Next(0, 15)], root);
 
             this.richTextBox.Text += "\n";
             BTree.TraverseAscending(root);
