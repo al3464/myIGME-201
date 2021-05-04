@@ -15,6 +15,7 @@ namespace ArcherLai_FinalProject
         public TigerMatch()
         {
             InitializeComponent();
+            okButton.Click += new EventHandler(OkButton__Click);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -25,6 +26,12 @@ namespace ArcherLai_FinalProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void OkButton__Click(object sender, EventArgs e)
+        {
+            Form4 oFrm4 = new Form4();
+            oFrm4.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

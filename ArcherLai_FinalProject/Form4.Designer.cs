@@ -31,6 +31,7 @@ namespace ArcherLai_FinalProject
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -42,7 +43,7 @@ namespace ArcherLai_FinalProject
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(805, 57);
             this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "   Tiger Match";
+            this.richTextBox1.Text = "   Tiger Profile";
             // 
             // richTextBox2
             // 
@@ -55,11 +56,21 @@ namespace ArcherLai_FinalProject
             this.richTextBox2.TabIndex = 5;
             this.richTextBox2.Text = "";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(713, 406);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form4";
@@ -72,5 +83,6 @@ namespace ArcherLai_FinalProject
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

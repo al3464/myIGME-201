@@ -15,9 +15,20 @@ namespace ArcherLai_FinalProject
         public Form3()
         {
             InitializeComponent();
+            listBox1.Visible = false;
+            button1.Click += new EventHandler(Button1__Click);
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Button1__Click(object sender, EventArgs e)
+        {
+            listBox1.Visible = true;
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

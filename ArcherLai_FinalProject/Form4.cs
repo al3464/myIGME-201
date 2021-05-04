@@ -15,6 +15,14 @@ namespace ArcherLai_FinalProject
         public Form4()
         {
             InitializeComponent();
+
+            button1.Click += new EventHandler(Button1__Click);
+        }
+
+        private void Button1__Click(object sender, EventArgs e)
+        {
+            Form2 oFrm2 = new Form2();
+            oFrm2.Show();
         }
     }
 }

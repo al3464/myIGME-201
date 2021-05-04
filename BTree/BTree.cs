@@ -161,13 +161,23 @@ namespace BTree
             // insert 30 random numbers between 1 and 51
 
             BTree root = null;
-            BTree node;
+            BTree node;               
             Random random = new Random();
 
             this.richTextBox.Clear();
 
             // Your code here
+        
+            for (int i = 0; i < 30; i++) {
 
+                node = new BTree(random.Next(51), root);
+                if (i == 0)
+                {
+                    root = node;
+                }
+              
+            }
+            
 
             this.richTextBox.Text += "\n";
 
