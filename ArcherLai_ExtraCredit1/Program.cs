@@ -88,7 +88,9 @@ namespace PetApp
 
         public void Evicted()
         {
-
+           
+            Console.WriteLine($": You will be a homeless furball, {Name}");
+            Console.WriteLine($"{Name}: AAAAAAAAAAAAAAAAAAAAAAH! Help me, I don't like the cold!");
         }
     }
 
@@ -128,16 +130,21 @@ namespace PetApp
 
         public static void EvictCat(object sender, ElapsedEventArgs e, Pets pets)
         {
+
             for (int i = 0; i < pets.Count; i++)
             {
                 if (pets[i].GetType() == typeof(Cat))
                 {
                     Console.WriteLine("remove cat called");
                     Console.WriteLine(pets.Count);
+                    
                     Cat evictedCat = pets[i] as Cat;
+                    
                     evictedCat.Evicted();
                     pets.RemoveAt(i);
                     i = pets.Count;
+
+                    
                 }
             }
         }
