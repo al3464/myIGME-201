@@ -44,34 +44,27 @@ namespace ArcherLai_Extracredit2
             this.label6 = new System.Windows.Forms.Label();
             this.Qone = new System.Windows.Forms.Label();
             this.Qtwo = new System.Windows.Forms.Label();
-            this.Qthree = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Qfour = new System.Windows.Forms.Label();
-            this.Qsix = new System.Windows.Forms.Label();
             this.Qfive = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.Qseven = new System.Windows.Forms.Label();
-            this.Qnine = new System.Windows.Forms.Label();
             this.Qeight = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -190,45 +183,30 @@ namespace ArcherLai_Extracredit2
             // Qtwo
             // 
             this.Qtwo.AutoSize = true;
-            this.Qtwo.Location = new System.Drawing.Point(13, 49);
+            this.Qtwo.Location = new System.Drawing.Point(12, 72);
             this.Qtwo.Name = "Qtwo";
             this.Qtwo.Size = new System.Drawing.Size(35, 13);
             this.Qtwo.TabIndex = 1;
             this.Qtwo.Text = "label8";
             // 
-            // Qthree
-            // 
-            this.Qthree.AutoSize = true;
-            this.Qthree.Location = new System.Drawing.Point(13, 79);
-            this.Qthree.Name = "Qthree";
-            this.Qthree.Size = new System.Drawing.Size(35, 13);
-            this.Qthree.TabIndex = 2;
-            this.Qthree.Text = "label9";
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(54, 46);
+            this.textBox2.Location = new System.Drawing.Point(67, 69);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(35, 20);
             this.textBox2.TabIndex = 3;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(54, 76);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(35, 20);
-            this.textBox3.TabIndex = 4;
-            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(54, 14);
+            this.textBox4.Location = new System.Drawing.Point(80, 15);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(35, 20);
             this.textBox4.TabIndex = 5;
+            this.textBox4.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.panel3);
+            this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Location = new System.Drawing.Point(15, 170);
             this.groupBox2.Name = "groupBox2";
@@ -236,33 +214,6 @@ namespace ArcherLai_Extracredit2
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.Qseven);
-            this.panel3.Controls.Add(this.Qnine);
-            this.panel3.Controls.Add(this.Qeight);
-            this.panel3.Controls.Add(this.textBox8);
-            this.panel3.Controls.Add(this.textBox9);
-            this.panel3.Location = new System.Drawing.Point(21, 19);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(145, 109);
-            this.panel3.TabIndex = 15;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.Qfour);
-            this.panel2.Controls.Add(this.Qsix);
-            this.panel2.Controls.Add(this.Qfive);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(145, 109);
-            this.panel2.TabIndex = 14;
             // 
             // Qfour
             // 
@@ -273,19 +224,10 @@ namespace ArcherLai_Extracredit2
             this.Qfour.TabIndex = 0;
             this.Qfour.Text = "label4";
             // 
-            // Qsix
-            // 
-            this.Qsix.AutoSize = true;
-            this.Qsix.Location = new System.Drawing.Point(13, 79);
-            this.Qsix.Name = "Qsix";
-            this.Qsix.Size = new System.Drawing.Size(41, 13);
-            this.Qsix.TabIndex = 2;
-            this.Qsix.Text = "label10";
-            // 
             // Qfive
             // 
             this.Qfive.AutoSize = true;
-            this.Qfive.Location = new System.Drawing.Point(13, 49);
+            this.Qfive.Location = new System.Drawing.Point(13, 59);
             this.Qfive.Name = "Qfive";
             this.Qfive.Size = new System.Drawing.Size(41, 13);
             this.Qfive.TabIndex = 1;
@@ -293,47 +235,24 @@ namespace ArcherLai_Extracredit2
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(54, 46);
+            this.textBox5.Location = new System.Drawing.Point(67, 59);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(35, 20);
             this.textBox5.TabIndex = 4;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(54, 77);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(35, 20);
-            this.textBox6.TabIndex = 3;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(53, 14);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(35, 20);
-            this.textBox7.TabIndex = 5;
-            // 
             // Qseven
             // 
             this.Qseven.AutoSize = true;
-            this.Qseven.Location = new System.Drawing.Point(13, 17);
+            this.Qseven.Location = new System.Drawing.Point(7, 17);
             this.Qseven.Name = "Qseven";
             this.Qseven.Size = new System.Drawing.Size(41, 13);
             this.Qseven.TabIndex = 0;
             this.Qseven.Text = "label12";
             // 
-            // Qnine
-            // 
-            this.Qnine.AutoSize = true;
-            this.Qnine.Location = new System.Drawing.Point(13, 79);
-            this.Qnine.Name = "Qnine";
-            this.Qnine.Size = new System.Drawing.Size(41, 13);
-            this.Qnine.TabIndex = 2;
-            this.Qnine.Text = "label13";
-            // 
             // Qeight
             // 
             this.Qeight.AutoSize = true;
-            this.Qeight.Location = new System.Drawing.Point(13, 49);
+            this.Qeight.Location = new System.Drawing.Point(6, 62);
             this.Qeight.Name = "Qeight";
             this.Qeight.Size = new System.Drawing.Size(41, 13);
             this.Qeight.TabIndex = 1;
@@ -341,25 +260,16 @@ namespace ArcherLai_Extracredit2
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(54, 46);
+            this.textBox8.Location = new System.Drawing.Point(67, 59);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(35, 20);
             this.textBox8.TabIndex = 4;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(54, 76);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(35, 20);
-            this.textBox9.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.Qone);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.Qthree);
             this.panel1.Controls.Add(this.Qtwo);
-            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Location = new System.Drawing.Point(21, 19);
             this.panel1.Name = "panel1";
@@ -368,7 +278,7 @@ namespace ArcherLai_Extracredit2
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 14);
+            this.textBox1.Location = new System.Drawing.Point(67, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(35, 20);
             this.textBox1.TabIndex = 5;
@@ -394,11 +304,45 @@ namespace ArcherLai_Extracredit2
             this.label4.TabIndex = 14;
             this.label4.Text = "Correct!!! Keep going!!";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(255, 277);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(469, 37);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Wrong. Come on! Do your best!";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.Qeight);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.Qseven);
+            this.panel2.Controls.Add(this.Qfour);
+            this.panel2.Controls.Add(this.Qfive);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Location = new System.Drawing.Point(21, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(145, 109);
+            this.panel2.TabIndex = 14;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(80, 14);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(35, 20);
+            this.textBox7.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
@@ -416,13 +360,11 @@ namespace ArcherLai_Extracredit2
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,9 +380,7 @@ namespace ArcherLai_Extracredit2
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label Qthree;
         private System.Windows.Forms.Label Qtwo;
         private System.Windows.Forms.Label Qone;
         private System.Windows.Forms.Label label3;
@@ -449,23 +389,19 @@ namespace ArcherLai_Extracredit2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Qfour;
-        private System.Windows.Forms.Label Qsix;
         private System.Windows.Forms.Label Qfive;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label Qseven;
-        private System.Windows.Forms.Label Qnine;
         private System.Windows.Forms.Label Qeight;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
 
