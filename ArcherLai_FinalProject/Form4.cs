@@ -16,13 +16,34 @@ namespace ArcherLai_FinalProject
         {
             InitializeComponent();
 
-            button1.Click += new EventHandler(Button1__Click);
+            submitButton.Click += new EventHandler(SubmitButton__Click);
+            homeButton.Click += new EventHandler(HomeButton__Click);
+            matchButton.Click += new EventHandler(MatchButton__Click);
+            //Allie Maus
+            //disabled profile button so that another profile form isn't displayed while on the profile page
+            profileButton.Enabled = false;
+
         }
 
-        private void Button1__Click(object sender, EventArgs e)
+        private void SubmitButton__Click(object sender, EventArgs e)
+        {
+
+            Form2 oFrm2 = new Form2();
+            oFrm2.Show();
+        }
+        //Allie Maus
+        //Added these
+        private void HomeButton__Click(object sender, EventArgs e)
         {
             Form2 oFrm2 = new Form2();
             oFrm2.Show();
+        }
+        //Allie Maus
+        //Added these
+        private void MatchButton__Click(object sender, EventArgs e)
+        {
+            Form3 oFrm3 = new Form3();
+            oFrm3.Show();
         }
     }
 }

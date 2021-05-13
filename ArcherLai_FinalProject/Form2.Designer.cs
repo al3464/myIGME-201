@@ -35,27 +35,30 @@ namespace ArcherLai_FinalProject
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.okButton = new System.Windows.Forms.Button();
+            this.homeOkButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.theHill = new System.Windows.Forms.RadioButton();
             this.greenWood = new System.Windows.Forms.RadioButton();
             this.theLodge = new System.Windows.Forms.RadioButton();
-            this.theHill = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.standard = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.triple = new System.Windows.Forms.RadioButton();
             this.single = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.standard = new System.Windows.Forms.RadioButton();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.profileButton = new System.Windows.Forms.Button();
+            this.matchButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Coral;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox1.Location = new System.Drawing.Point(-1, 0);
@@ -112,7 +115,7 @@ namespace ArcherLai_FinalProject
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Coral;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
@@ -124,20 +127,22 @@ namespace ArcherLai_FinalProject
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choice Of Housing";
             // 
-            // okButton
+            // homeOkButton
             // 
-            this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.okButton.Location = new System.Drawing.Point(690, 376);
-            this.okButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(70, 31);
-            this.okButton.TabIndex = 14;
-            this.okButton.Text = "Submit";
-            this.okButton.UseVisualStyleBackColor = true;
+            this.homeOkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.homeOkButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.homeOkButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeOkButton.Location = new System.Drawing.Point(690, 376);
+            this.homeOkButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.homeOkButton.Name = "homeOkButton";
+            this.homeOkButton.Size = new System.Drawing.Size(70, 31);
+            this.homeOkButton.TabIndex = 14;
+            this.homeOkButton.Text = "Submit";
+            this.homeOkButton.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Coral;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
             this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(275, 116);
@@ -146,7 +151,28 @@ namespace ArcherLai_FinalProject
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Choice Of Housing";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.theHill);
+            this.panel1.Controls.Add(this.greenWood);
+            this.panel1.Controls.Add(this.theLodge);
+            this.panel1.Location = new System.Drawing.Point(26, 68);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(193, 159);
+            this.panel1.TabIndex = 15;
+            // 
+            // theHill
+            // 
+            this.theHill.AutoSize = true;
+            this.theHill.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.theHill.Location = new System.Drawing.Point(18, 97);
+            this.theHill.Name = "theHill";
+            this.theHill.Size = new System.Drawing.Size(82, 23);
+            this.theHill.TabIndex = 12;
+            this.theHill.TabStop = true;
+            this.theHill.Text = "The Hill";
+            this.theHill.UseVisualStyleBackColor = true;
             // 
             // greenWood
             // 
@@ -166,27 +192,15 @@ namespace ArcherLai_FinalProject
             this.theLodge.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.theLodge.Location = new System.Drawing.Point(18, 53);
             this.theLodge.Name = "theLodge";
-            this.theLodge.Size = new System.Drawing.Size(101, 23);
+            this.theLodge.Size = new System.Drawing.Size(105, 23);
             this.theLodge.TabIndex = 11;
             this.theLodge.TabStop = true;
-            this.theLodge.Text = "The lodge";
+            this.theLodge.Text = "The Lodge";
             this.theLodge.UseVisualStyleBackColor = true;
-            // 
-            // theHill
-            // 
-            this.theHill.AutoSize = true;
-            this.theHill.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theHill.Location = new System.Drawing.Point(18, 97);
-            this.theHill.Name = "theHill";
-            this.theHill.Size = new System.Drawing.Size(79, 23);
-            this.theHill.TabIndex = 12;
-            this.theHill.TabStop = true;
-            this.theHill.Text = "The hill";
-            this.theHill.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Coral;
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(545, 116);
@@ -196,17 +210,15 @@ namespace ArcherLai_FinalProject
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Choice Of Housing";
             // 
-            // standard
+            // panel2
             // 
-            this.standard.AutoSize = true;
-            this.standard.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.standard.Location = new System.Drawing.Point(24, 53);
-            this.standard.Name = "standard";
-            this.standard.Size = new System.Drawing.Size(93, 23);
-            this.standard.TabIndex = 7;
-            this.standard.TabStop = true;
-            this.standard.Text = "Standard";
-            this.standard.UseVisualStyleBackColor = true;
+            this.panel2.Controls.Add(this.triple);
+            this.panel2.Controls.Add(this.single);
+            this.panel2.Controls.Add(this.standard);
+            this.panel2.Location = new System.Drawing.Point(37, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 148);
+            this.panel2.TabIndex = 15;
             // 
             // triple
             // 
@@ -232,46 +244,80 @@ namespace ArcherLai_FinalProject
             this.single.Text = "Single";
             this.single.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // standard
             // 
-            this.panel1.Controls.Add(this.theHill);
-            this.panel1.Controls.Add(this.greenWood);
-            this.panel1.Controls.Add(this.theLodge);
-            this.panel1.Location = new System.Drawing.Point(26, 68);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 159);
-            this.panel1.TabIndex = 15;
+            this.standard.AutoSize = true;
+            this.standard.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.standard.Location = new System.Drawing.Point(24, 53);
+            this.standard.Name = "standard";
+            this.standard.Size = new System.Drawing.Size(93, 23);
+            this.standard.TabIndex = 7;
+            this.standard.TabStop = true;
+            this.standard.Text = "Standard";
+            this.standard.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // homeButton
             // 
-            this.panel2.Controls.Add(this.triple);
-            this.panel2.Controls.Add(this.single);
-            this.panel2.Controls.Add(this.standard);
-            this.panel2.Location = new System.Drawing.Point(37, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 148);
-            this.panel2.TabIndex = 15;
+            this.homeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.ForeColor = System.Drawing.Color.White;
+            this.homeButton.Location = new System.Drawing.Point(545, 13);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(75, 23);
+            this.homeButton.TabIndex = 15;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = false;
+            // 
+            // profileButton
+            // 
+            this.profileButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.profileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.profileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton.ForeColor = System.Drawing.Color.White;
+            this.profileButton.Location = new System.Drawing.Point(626, 13);
+            this.profileButton.Name = "profileButton";
+            this.profileButton.Size = new System.Drawing.Size(75, 23);
+            this.profileButton.TabIndex = 16;
+            this.profileButton.Text = "Profile";
+            this.profileButton.UseVisualStyleBackColor = false;
+            // 
+            // matchButton
+            // 
+            this.matchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.matchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.matchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchButton.ForeColor = System.Drawing.Color.White;
+            this.matchButton.Location = new System.Drawing.Point(707, 13);
+            this.matchButton.Name = "matchButton";
+            this.matchButton.Size = new System.Drawing.Size(75, 23);
+            this.matchButton.TabIndex = 17;
+            this.matchButton.Text = "Match";
+            this.matchButton.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.matchButton);
+            this.Controls.Add(this.profileButton);
+            this.Controls.Add(this.homeButton);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.homeOkButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Text = "Home";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -286,7 +332,7 @@ namespace ArcherLai_FinalProject
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Button homeOkButton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton theHill;
         private System.Windows.Forms.RadioButton theLodge;
@@ -297,5 +343,8 @@ namespace ArcherLai_FinalProject
         private System.Windows.Forms.RadioButton single;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button profileButton;
+        private System.Windows.Forms.Button matchButton;
     }
 }

@@ -201,29 +201,27 @@ namespace BTree
 
 
             // Your code here
+            node = new BTree(2, null);
+            root = node;
+            for (int i = 3; i <= 51; i++)
+            {
+                for (int j = 3; j <= i; j++)
+                {
+                    if (i % j == 0 && i != j)
+                    {
+                        break;
+                    }
+                    if (i % j == 0 && i == j)
+                    {
+                       node = new BTree(i, root);
+                    }
+
+                }
+
+            }
+
             
-            for (int i = 0; i <= 51; ++i)
-            {
-                
-                node = new BTree(i, root);
-
-                if (i == 0)
-                {
-                    root = node;
-                }
-
-            }
-
-            for (int i = 0; i < 7; ++i)
-            {
-
-                node = new BTree(random.Next(1, 52), root);
-
-                if (i == 0)
-                {
-                    root = node;
-                }
-            }
+          
 
             this.richTextBox.Text += "\n";
 
@@ -282,7 +280,7 @@ namespace BTree
             BTree root = null;
 
             // Your code here
-            Exercise3__Click(sender, e);
+
 
             this.richTextBox.Text += "\n";
             BTree.TraverseAscending(root);

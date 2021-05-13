@@ -31,20 +31,19 @@ namespace ArcherLai_FinalProject
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.profileButton = new System.Windows.Forms.Button();
+            this.matchButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.licText = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passwordText = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Coral;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox1.Location = new System.Drawing.Point(-2, -1);
@@ -64,53 +63,44 @@ namespace ArcherLai_FinalProject
             this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Text = "";
             // 
-            // button1
+            // homeButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(470, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.homeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.ForeColor = System.Drawing.Color.White;
+            this.homeButton.Location = new System.Drawing.Point(551, 12);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(75, 23);
+            this.homeButton.TabIndex = 5;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // profileButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(551, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Chat";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.profileButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.profileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.profileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton.ForeColor = System.Drawing.Color.White;
+            this.profileButton.Location = new System.Drawing.Point(632, 12);
+            this.profileButton.Name = "profileButton";
+            this.profileButton.Size = new System.Drawing.Size(75, 23);
+            this.profileButton.TabIndex = 7;
+            this.profileButton.Text = "Profile";
+            this.profileButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // matchButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(632, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Profile";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Coral;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(713, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Match";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.matchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.matchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.matchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchButton.ForeColor = System.Drawing.Color.White;
+            this.matchButton.Location = new System.Drawing.Point(713, 12);
+            this.matchButton.Name = "matchButton";
+            this.matchButton.Size = new System.Drawing.Size(75, 23);
+            this.matchButton.TabIndex = 8;
+            this.matchButton.Text = "Match";
+            this.matchButton.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -121,7 +111,6 @@ namespace ArcherLai_FinalProject
             this.label1.Size = new System.Drawing.Size(135, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "User Name:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -142,43 +131,45 @@ namespace ArcherLai_FinalProject
             this.licText.Size = new System.Drawing.Size(220, 20);
             this.licText.TabIndex = 11;
             // 
-            // textBox1
+            // passwordText
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.Location = new System.Drawing.Point(333, 220);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 12;
+            this.passwordText.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.passwordText.Location = new System.Drawing.Point(333, 220);
+            this.passwordText.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.passwordText.Name = "passwordText";
+            this.passwordText.Size = new System.Drawing.Size(220, 20);
+            this.passwordText.TabIndex = 12;
             // 
             // okButton
             // 
+            this.okButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(105)))), ((int)(((byte)(2)))));
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.okButton.Location = new System.Drawing.Point(391, 265);
             this.okButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(102, 31);
             this.okButton.TabIndex = 13;
             this.okButton.Text = "Log in";
-            this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.UseVisualStyleBackColor = false;
             // 
             // TigerMatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.okButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordText);
             this.Controls.Add(this.licText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.matchButton);
+            this.Controls.Add(this.profileButton);
+            this.Controls.Add(this.homeButton);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Name = "TigerMatch";
-            this.Load += new System.EventHandler(this.TigerMatch_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,14 +178,13 @@ namespace ArcherLai_FinalProject
         #endregion
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button profileButton;
+        private System.Windows.Forms.Button matchButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox licText;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passwordText;
         private System.Windows.Forms.Button okButton;
     }
 }

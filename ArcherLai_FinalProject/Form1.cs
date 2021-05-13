@@ -16,55 +16,38 @@ namespace ArcherLai_FinalProject
         {
             InitializeComponent();
             okButton.Click += new EventHandler(OkButton__Click);
-        }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            //Allie Maus
+            //Renamed these so that they were easier to identify and set enabled to false so that 
+            //users don't have access without loging in 
+            homeButton.Enabled = false;
+            profileButton.Enabled = false;
+            matchButton.Enabled = false;
 
-        }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
         private void OkButton__Click(object sender, EventArgs e)
         {
-            Form4 oFrm4 = new Form4();
-            oFrm4.Show();
-        }
+            //allie maus
+            //when ok button is clicked it checks to make sure an rit email was entered and that the password isnt empty
+            //before allowing the user to log in
+            string user = licText.Text;
+            string password = passwordText.Text;
+            string substring = "@rit.edu";
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 oFrm2 = new Form2();
-            oFrm2.Show();
-        }
+            if(user.Contains(substring)== true)
+            {
+                if(password != "")
+                {
+                    Form4 oFrm4 = new Form4();
+                    oFrm4.Show();
+                }
+            }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form3 oFrm3 = new Form3();
-            oFrm3.Show();
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form4 oFrm4 = new Form4();
-            oFrm4.Show();
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form5 oFrm5 = new Form5();
-            oFrm5.Show();
-        }
-
-        private void TigerMatch_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }
